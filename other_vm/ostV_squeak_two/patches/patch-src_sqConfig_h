@@ -1,0 +1,43 @@
+$OpenBSD$
+
+Index: src/sqConfig.h
+--- src/sqConfig.h.orig
++++ src/sqConfig.h
+@@ -301,6 +301,37 @@
+ # define SQ_CONFIG_DONE
+ #endif
+ 
++#if defined(__OpenBSD__)
++# if defined(i386)				/* iX86/OpenBSD */
++#   if defined(SQ_CONFIG_DONE)
++#     error configuration conflict
++#   endif
++#   undef  HAS_D_NAMLEN
++#   undef  HAS_TIMEZONE
++#   undef  HAS_ON_EXIT
++#   define HAS_LSB_FIRST
++#   undef  HAS_SUN_AUDIO
++#   undef  DOUBLE_WORD_ALIGNMENT
++#   define DOUBLE_WORD_ORDER
++#   define JUMP_ALIGN_BYTE
++#   define SQ_CONFIG_DONE
++# endif
++# if defined(__amd64__)				/* amd64/OpenBSD */
++#   if defined(SQ_CONFIG_DONE)
++#     error configuration conflict
++#   endif
++#   undef  HAS_D_NAMLEN
++#   undef  HAS_TIMEZONE
++#   undef  HAS_ON_EXIT
++#   define HAS_LSB_FIRST
++#   undef  HAS_SUN_AUDIO
++#   define DOUBLE_WORD_ALIGNMENT
++#   define DOUBLE_WORD_ORDER
++#   define JUMP_ALIGN_BYTE
++#   define SQ_CONFIG_DONE
++# endif
++#endif
++
+ #if !defined(SQ_CONFIG_DONE)
+ # error test for, and describe, your architecture here.
+ #endif

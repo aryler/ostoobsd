@@ -1,0 +1,46 @@
+@comment $OpenBSD$
+bin/squeak
+lib/${OST_HOME}/
+lib/${OST_HOME}/${OST_INTERP}/
+lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/ADPCMCodecPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/AsynchFilePlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/B2DPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/B3DAcceleratorPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/BMPReadWriterPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/BitBltPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/CroquetPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/DSAPrims
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/DropPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/FFTPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/FT2Plugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/FileCopyPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/FilePlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/FloatArrayPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/FloatMathPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/GeniePlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/JPEGReadWriter2Plugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/JPEGReaderPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/JoystickTabletPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/Klatt
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/LargeIntegers
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/LocalePlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/Matrix2x3Plugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/MiscPrimitivePlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/Mpeg3Plugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/QuicktimePlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/RePlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/SecurityPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/SerialPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/SocketPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/SoundCodecPrims
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/SoundGenerationPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/SoundPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/StarSqueakPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/SurfacePlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/UnixOSProcessPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/ZipPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/squeak
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/vm-display-X11
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/vm-display-null
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/vm-sound-null

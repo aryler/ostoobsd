@@ -1,0 +1,17 @@
+I've collected about as much useful Smalltalk bits and pieces as I could find.
+
+There may be more to add but now the focus is on the details of building.
+
+
+Notes:
+
+For easy testing, there are currently no port interdependencies.
+
+Remove the (currently unneeded) 'processors/' dir (about 20MB),
+re-roll the distfile and 'make makesum' to save time and space.
+
+For easy testing, install sources and images to taste.
+VMs can be run from the build dir:
+
+$ /usr/ports/pobj/squeak_cog_spur-5.1/build-i386/squeak \
+    /usr/local/share/opensmalltalk/Squeak5.1-16549-32bit.image

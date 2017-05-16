@@ -1,0 +1,5 @@
+@comment $OpenBSD$
+@option no-default-conflict
+@conflict ${FULLPKGNAME}
+share/${OST_HOME}/
+share/${OST_HOME}/Squeak${OST_SRC_VER}0.sources

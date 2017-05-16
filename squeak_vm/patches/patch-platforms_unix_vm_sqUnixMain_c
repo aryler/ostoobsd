@@ -1,0 +1,14 @@
+$OpenBSD$
+Index: platforms/unix/vm/sqUnixMain.c
+--- platforms/unix/vm/sqUnixMain.c.orig
++++ platforms/unix/vm/sqUnixMain.c
+@@ -891,6 +891,9 @@ reportStackState(char *msg, char *date, int printAll, 
+ # elif __FreeBSD__ && __i386__
+ 			void *fp = (void *)(uap ? uap->uc_mcontext.mc_ebp: 0);
+ 			void *sp = (void *)(uap ? uap->uc_mcontext.mc_esp: 0);
++# elif __OpenBSD__ && __i386__
++			void *fp = (void *)(uap ? uap->sc_ebp: 0);
++			void *sp = (void *)(uap ? uap->sc_esp: 0);
+ # elif __OpenBSD__
+ 			void *fp = (void *)(uap ? uap->sc_rbp: 0);
+ 			void *sp = (void *)(uap ? uap->sc_rsp: 0);

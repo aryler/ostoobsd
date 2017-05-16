@@ -1,0 +1,28 @@
+$OpenBSD$
+
+Index: src/GNUmakefile.conf
+--- src/GNUmakefile.conf.orig
++++ src/GNUmakefile.conf
+@@ -188,6 +188,22 @@ ifeq ($(SYSTEM),					irix) 
+   GNU=
+   GAWK=
+ endif
++
++ifeq ($(SYSTEM),					openbsd)
++  CC=		cc
++  CCFLAGS:=	-pipe -pthread -Wall -O2 -g $(PROFILE)
++  INCDIRS=	-I/usr/local/include -I/usr/X11R6/include
++  LDO=		ld -r
++  LD=		cc
++  LDFLAGS:=	$(PROFILE)
++  SHCFLAGS:=	$(CCFLAGS) -fPIC
++  SHLDFLAGS:=	-rdynamic -shared -lm -lpthread
++  LIBDIRS=	-L/usr/local/lib -L/usr/X11R6/lib
++  LIBS=		-lX11 -lXext -lm -lpthread
++  GNU=
++  GAWK=		awk
++endif
++
+ #									   #
+ #		 	END OF CONFIGURATION SECTION			   #
+ #									   #

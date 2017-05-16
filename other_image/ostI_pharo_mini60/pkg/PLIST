@@ -1,0 +1,4 @@
+@comment $OpenBSD$
+share/${OST_HOME}/
+share/${OST_HOME}/Pharo${OST_IMG_VER}-60486-minimal.changes
+share/${OST_HOME}/Pharo${OST_IMG_VER}-60486-minimal.image

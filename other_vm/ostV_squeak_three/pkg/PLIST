@@ -1,0 +1,15 @@
+@comment $OpenBSD$
+@option no-default-conflict
+@conflict ${FULLPKGNAME}
+lib/${OST_HOME}/
+lib/${OST_HOME}/${OST_INTERP}/
+lib/${OST_HOME}/${OST_INTERP}/three_${OST_VM_VER}/
+@bin lib/${OST_HOME}/${OST_INTERP}/three_${OST_VM_VER}/B3DAcceleratorPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/three_${OST_VM_VER}/PseudoTTYPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/three_${OST_VM_VER}/Squeak3D
+@bin lib/${OST_HOME}/${OST_INTERP}/three_${OST_VM_VER}/UnixOSProcessPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/three_${OST_VM_VER}/XDisplayControlPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/three_${OST_VM_VER}/${OST_INTERP}
+@bin lib/${OST_HOME}/${OST_INTERP}/three_${OST_VM_VER}/vm-display-X11
+@bin lib/${OST_HOME}/${OST_INTERP}/three_${OST_VM_VER}/vm-display-null
+@bin lib/${OST_HOME}/${OST_INTERP}/three_${OST_VM_VER}/vm-sound-null

@@ -1,0 +1,7 @@
+@comment $OpenBSD$
+@option no-default-conflict
+@conflict ${FULLPKGNAME}
+lib/${OST_HOME}/
+lib/${OST_HOME}/${OST_INTERP}/
+lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}/${OST_INTERP}

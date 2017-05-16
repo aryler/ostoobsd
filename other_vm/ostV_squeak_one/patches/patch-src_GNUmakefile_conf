@@ -1,0 +1,26 @@
+$OpenBSD$
+
+Index: src/GNUmakefile.conf
+--- src/GNUmakefile.conf.orig
++++ src/GNUmakefile.conf
+@@ -109,6 +109,20 @@ ifeq ($(MACHINE)-$(SYSTEM),				hppa-hpux)
+   GNU=		gnu-
+   GAWK=		gawk
+ endif
++
++ifeq ($(SYSTEM),					openbsd)
++  CC=		cc
++  CCFLAGS:=	-pipe -pthread -O2 -g $(PROFILE) -Wall
++  INCDIRS=	-I/usr/local/include -I/usr/X11R6/include
++  LDO=		ld -r
++  LD=		cc
++  LDFLAGS:=	 $(PROFILE)
++  LIBDIRS=	-L/usr/local/lib -L/usr/X11R6/lib
++  LIBS=		-lX11 -lXext -lm -lpthread
++  GNU=
++  GAWK=		awk
++endif
++
+ #									   #
+ #		 	END OF CONFIGURATION SECTION			   #
+ #									   #

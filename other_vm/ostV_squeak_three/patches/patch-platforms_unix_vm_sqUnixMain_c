@@ -1,0 +1,33 @@
+$OpenBSD: patch-platforms_unix_vm_sqUnixMain_c,v 1.5 2016/09/11 16:30:12 ratchov Exp $
+--- platforms/unix/vm/sqUnixMain.c.orig	Sat Mar 22 04:33:18 2008
++++ platforms/unix/vm/sqUnixMain.c	Tue May  2 21:48:20 2017
+@@ -54,11 +54,6 @@
+ #include <signal.h>
+ #include <fcntl.h>
+ 
+-#if defined(__alpha__)
+-# include <sys/sysinfo.h>
+-# include <sys/proc.h>
+-#endif
+-
+ #undef	DEBUG_MODULES
+ 
+ #undef	IMAGE_DUMP				/* define to enable SIGHUP and SIGQUIT handling */
+@@ -1329,17 +1324,6 @@ int main(int argc, char **argv, char **envp)
+     outOfMemory();
+ 
+   signal(SIGSEGV, sigsegv);
+-
+-#if defined(__alpha__)
+-  /* disable printing of unaligned access exceptions */
+-  {
+-    int buf[2]= { SSIN_UACPROC, UAC_NOPRINT };
+-    if (setsysinfo(SSI_NVPAIRS, buf, 1, 0, 0, 0) < 0)
+-      {
+-	perror("setsysinfo(UAC_NOPRINT)");
+-      }
+-  }
+-#endif
+ 
+ #if defined(HAVE_TZSET)
+   tzset();	/* should _not_ be necessary! */

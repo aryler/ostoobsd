@@ -1,0 +1,4 @@
+@comment $OpenBSD$
+share/${OST_HOME}/
+share/${OST_HOME}/Newspeak-${OST_IMG_VER}-64bit.changes
+share/${OST_HOME}/Newspeak-${OST_IMG_VER}-64bit.image

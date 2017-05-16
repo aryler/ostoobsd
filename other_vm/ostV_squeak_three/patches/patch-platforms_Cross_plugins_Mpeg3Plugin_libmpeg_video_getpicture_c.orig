@@ -1,0 +1,23 @@
+$OpenBSD$
+
+Index: platforms/Cross/plugins/Mpeg3Plugin/libmpeg/video/getpicture.c
+--- platforms/Cross/plugins/Mpeg3Plugin/libmpeg/video/getpicture.c.orig
++++ platforms/Cross/plugins/Mpeg3Plugin/libmpeg/video/getpicture.c
+@@ -205,7 +205,7 @@ int mpeg3video_getintrablock(mpeg3_slice_t *slice, 
+ 		{
+ /*    	  	fprintf(stderr, "mpeg3video_getintrablock: invalid Huffman code\n"); */
+     	  	slice->fault = 1;
+-    	  	return;
++    	  	return 1;
+     	}
+ 
+     	mpeg3slice_flushbits(slice_buffer, tab->len);
+@@ -240,7 +240,7 @@ int mpeg3video_getintrablock(mpeg3_slice_t *slice, 
+ 		else
+ 		{
+     	  	slice->fault = 1;
+-    	  	return;
++    	  	return 1;
+ 		}
+ 			
+ 

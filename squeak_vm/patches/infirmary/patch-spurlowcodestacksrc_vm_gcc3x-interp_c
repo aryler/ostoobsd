@@ -1,0 +1,14 @@
+$OpenBSD$
+--- spurlowcodestacksrc/vm/gcc3x-interp.c.orig	Fri May  5 17:00:10 2017
++++ spurlowcodestacksrc/vm/gcc3x-interp.c	Fri May  5 17:02:19 2017
+@@ -82828,8 +82828,8 @@ GIV(statScavengeGCUsecs))) + 500) / 1000) << 1) | 1);
+ 	l96:	/* end tenuringThreshold: */;
+ 	}
+ 	if (index == 17) {
+-		result = floatObjectOf(getCogCodeZoneThreshold());
+-		GIV(primFailCode) = setCogCodeZoneThreshold(floatValueOf(arg));
++		result = floatObjectOf(arg);
++		GIV(primFailCode) = 0;
+ 	}
+ 	if (index == 23) {
+ 		result = (((usqInt)extraVMMemory << 1) | 1);

@@ -1,0 +1,16 @@
+$OpenBSD$
+
+Index: spurlowcodestack64src/vm/interp.c
+--- spurlowcodestack64src/vm/interp.c.orig
++++ spurlowcodestack64src/vm/interp.c
+@@ -84061,8 +84061,8 @@ GIV(statScavengeGCUsecs))) + 500) / 1000) << 3) | 1);
+ 	l94:	/* end tenuringThreshold: */;
+ 	}
+ 	if (index == 17) {
+-		result = floatObjectOf(getCogCodeZoneThreshold());
+-		GIV(primFailCode) = setCogCodeZoneThreshold(floatValueOf(arg));
++		result = floatObjectOf(arg);
++		GIV(primFailCode) = 0;
+ 	}
+ 	if (index == 23) {
+ 		result = (((usqInt)extraVMMemory << 3) | 1);

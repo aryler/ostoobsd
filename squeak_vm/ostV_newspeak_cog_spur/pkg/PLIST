@@ -1,0 +1,9 @@
+@comment $OpenBSD$
+lib/${OST_HOME}/
+lib/${OST_HOME}/${OST_INTERP}/
+lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-CogSpurVM/
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-CogSpurVM/SqueakSSL
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-CogSpurVM/${OST_INTERP}
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-CogSpurVM/vm-display-X11
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-CogSpurVM/vm-display-null
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-CogSpurVM/vm-sound-null

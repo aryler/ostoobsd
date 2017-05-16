@@ -1,0 +1,4 @@
+@comment $OpenBSD$
+share/${OST_HOME}/
+share/${OST_HOME}/FunSqueak${OST_IMG_VER}.changes
+share/${OST_HOME}/FunSqueak${OST_IMG_VER}.image

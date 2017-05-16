@@ -1,0 +1,15 @@
+@comment $OpenBSD$
+lib/${OST_HOME}/
+lib/${OST_HOME}/${OST_INTERP}/
+lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-StackSpurVM/
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-StackSpurVM/B3DAcceleratorPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-StackSpurVM/ImmX11Plugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-StackSpurVM/LocalePlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-StackSpurVM/SqueakFFIPrims
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-StackSpurVM/SqueakSSL
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-StackSpurVM/UnixOSProcessPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-StackSpurVM/XDisplayControlPlugin
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-StackSpurVM/${OST_INTERP}
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-StackSpurVM/vm-display-X11
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-StackSpurVM/vm-display-null
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-StackSpurVM/vm-sound-null

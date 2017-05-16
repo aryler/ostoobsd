@@ -1,0 +1,114 @@
+OpenSmalltalk on OpenBSD
+
+OpenSmalltalk appears to be the consolidation
+of various modern open-source Smalltalks.
+
+This set of OpenSmalltalk ports can build and install
+a variety of images, sources and VMs.
+
+
+The rest of this document slightly out-of date as of 2017/05/01.
+
+
+There is also a port for the older Squeak-3.10.
+
+For easy testing, there are currently no port interdependencies.
+
+Remove the (currently unneeded) 'processors/' dir (about 20MB),
+re-roll the distfile and 'make makesum' to save time and space.
+
+The Pharo 6.0 and Squeak 6.0alpha images are moving targets.
+
+For easy testing, install sources and images to taste.
+VMs can be run from the build dir:
+
+$ /usr/ports/pobj/squeak_cog_spur-5.1/build-i386/squeak /usr/local/share/opensmalltalk/Squeak5.1-16549-32bit.image
+
+
+
+Images:
+squeak_image3102
+squeak_image45
+squeak_image46
+squeak_image51_32
+squeak_image51_64
+squeak_image60_32
+squeak_image60_64
+pharo_image50
+pharo_image60
+pharo_image_mini60
+
+Sources:
+squeak_sources39
+squeak_sources41
+squeak_sources46
+squeak_sources50
+pharo_sources50
+
+VMs:
+newspeak_cog_spur
+newspeak_stack_spur
+pharo_cog_spur
+pharo_cog_spur_lowcode
+squeak_cog_spur
+squeak_cog_vthree
+squeak_sista_spur
+squeak_stack_spur
+squeak_stack_vthree
+squeak_three_vthree
+
+
+
+VMs for Images:
+
+newspeak_cog_spur
+newspeak_stack_spur
+pharo_cog_spur
+pharo_cog_spur_lowcode
+squeak_cog_spur
+squeak_stack_spur
+squeak_sista_spur
+ squeak_image51_32
+ squeak_image60_32
+ pharo_image50
+ pharo_image60
+ pharo_image_mini60
+
+squeak_cog_spur
+ squeak_image51_64
+ squeak_image60_64
+
+squeak_cog_vthree
+squeak_stack_vthree
+ squeak_image45
+ squeak_image46
+
+squeak_three_vthree
+ squeak_image3102
+
+
+
+Sources for Images:
+
+squeak_sources39
+ squeak_image3102
+
+squeak_sources41
+ squeak_image45
+
+squeak_sources46
+ squeak_image46
+
+squeak_sources50
+ squeak_image51_32
+ squeak_image51_64
+ squeak_image60_32
+ squeak_image60_64
+
+pharo_sources50
+ pharo_image50
+ pharo_image60
+ pharo_image_mini60
+
+
+# EOF

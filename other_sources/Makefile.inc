@@ -1,0 +1,7 @@
+# $OpenBSD$
+
+DIST_SUBDIR =	${OST_HOME}
+SUBST_VARS =	OST_HOME OST_SRC_VER
+
+OST_HOME =	opensmalltalk
+OST_SRC_VER ?=	V${V:S/.//g}
