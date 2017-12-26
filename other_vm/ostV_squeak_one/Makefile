@@ -35,12 +35,9 @@ NO_TEST =		Yes
 
 .if ${PROPERTIES:Mlp64}
 #SQ_ARCH =		64x64
-CC +=			-m64
-CXX +=			-m64
+#COPTS +=		-Wno-int-to-pointer-cast -Wno-return-type
 .else
 #SQ_ARCH =		32x86
-CC +=			-m32
-CXX +=			-m32
 #CFLAGS +=		-D_FILE_OFFSET_BITS=64
 .endif
 

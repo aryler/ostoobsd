@@ -3,7 +3,7 @@
 N =		pharo
 
 V =		6.0
-R =		60486
+R =		60528
 
 T =		Pharo
 D =		${T}${V}-${R}

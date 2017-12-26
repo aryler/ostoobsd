@@ -19,7 +19,7 @@ EXTRACT_SUFX =		.zip
 DIST_SUBDIR =		${OST_HOME}
 NO_BUILD =		Yes
 PKG_ARCH =		*
-SUBST_VARS =		OST_HOME OST_IMG_VER
+SUBST_VARS =		OST_HOME OST_IMG_VER OST_IMG_REL
 
 OST_SITE ?=		http://files.squeak.org/
 OSR_SITE_DIR ?=
@@ -27,6 +27,7 @@ OSR_SITE_DIR ?=
 V ?=
 OST_HOME =		opensmalltalk
 OST_IMG_VER ?=		${V}
+OST_IMG_REL ?=		${R}
 OST_INSTALL_DIR =	${PREFIX}/share/${OST_HOME}
 OST_EXCLUDE ?=
 

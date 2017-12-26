@@ -16,11 +16,6 @@ CONFIGURE_ARGS +=	--with-vmversion=5.0
 
 CFLAGS +=		-DCOGMTVM=0
 
-.if ! ${PROPERTIES:Mlp64}
-# Any combination of one or more will build a non-crashing vm.
-#CC =			clang
-#CFLAGS +=		-fno-pie
-MAKE_FLAGS +=		INTERP=cointerp
-.endif
+#CFLAGS +=		-Wno-unused-value -Wno-int-conversion -Wno-implicit-function-declaration -Wno-return-type
 
 .include <bsd.port.mk>

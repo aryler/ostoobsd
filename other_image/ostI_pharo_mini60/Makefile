@@ -3,7 +3,7 @@
 N =		pharo_mini
 
 V =		6.0
-R =		60486${L}
+R =		60528${L}
 L =		-minimal
 
 T =		Pharo

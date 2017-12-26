@@ -14,13 +14,6 @@ CONFIGURE_ARGS +=	--with-src=nsspursrc
 
 CONFIGURE_ARGS +=	--with-vmversion=5.0 --without-vm-display-fbdev
 
-.if ! ${PROPERTIES:Mlp64}
-# Any combination of one or more will build a non-crashing vm.
-#CC =			clang
-#CFLAGS +=		-fno-pie
-MAKE_FLAGS +=		INTERP=cointerp
-.endif
-
 post-install: demenage
 
 .include <bsd.port.mk>

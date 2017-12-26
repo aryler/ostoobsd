@@ -12,9 +12,4 @@ OST_VM_VER =		4.5
 
 CFLAGS +=		-DCOGMTVM=0
 
-# Any combination of one or more will build a non-crashing vm.
-#CC =			clang
-#CFLAGS +=		-fno-pie
-MAKE_FLAGS +=		INTERP=cointerp
-
 .include <bsd.port.mk>

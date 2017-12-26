@@ -15,9 +15,4 @@ CFLAGS +=		-DCOGMTVM=0
 USE_WXNEEDED =		Yes
 SQ_LDFLAGS +=		-Wl,-z,wxneeded
 
-# Any combination of one or more will build a non-crashing vm.
-#CC =			clang
-#CFLAGS +=		-fno-pie
-MAKE_FLAGS +=		INTERP=cointerp
-
 .include <bsd.port.mk>

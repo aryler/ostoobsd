@@ -18,13 +18,6 @@ CFLAGS +=		-DCOGMTVM=0 -DPharoVM -DIMMUTABILITY=1
 
 SQ_LIBS +=		-Wl,-rpath,$$ORIGIN
 
-.if ! ${PROPERTIES:Mlp64}
-# Any combination of one or more will build a non-crashing vm.
-#CC =			clang
-#CFLAGS +=		-fno-pie
-MAKE_FLAGS +=		INTERP=cointerp
-.endif
-
 post-install: demenage
 
 .include <bsd.port.mk>

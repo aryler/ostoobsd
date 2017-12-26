@@ -7,6 +7,7 @@ lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-SistaSpurVM/
 @bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-SistaSpurVM/LocalePlugin
 @bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-SistaSpurVM/SqueakFFIPrims
 @bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-SistaSpurVM/SqueakSSL
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-SistaSpurVM/UUIDPlugin
 @bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-SistaSpurVM/UnixOSProcessPlugin
 @bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-SistaSpurVM/XDisplayControlPlugin
 @bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-SistaSpurVM/${OST_INTERP}

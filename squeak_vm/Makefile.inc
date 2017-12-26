@@ -15,15 +15,15 @@ MAINTAINER =		Stuart Cassoff <stwo@users.sourceforge.net>
 # ?
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		GL ICE SM X11 Xext c crypto execinfo m ossp-uuid pthread
+WANTLIB =		GL ICE SM X11 Xext c crypto execinfo m pthread
 WANTLIB +=		ssl util
 
 GH_ACCOUNT =		opensmalltalk
 GH_PROJECT =		opensmalltalk-vm
-GH_COMMIT =		2ec84484d2b66d5b494e9ceeb10f5a9b0e8dc35a
+GH_COMMIT =		ec439f18e994309de62f64c23b48e35920633f39
 
 DIST_SUBDIR =		${OST_HOME}
-LIB_DEPENDS =		devel/uuid devel/libexecinfo
+LIB_DEPENDS =		devel/libexecinfo
 SEPARATE_BUILD =	Yes
 USE_GMAKE =		Yes
 LIBTOOL =		${WRKBUILD}/libtool
@@ -34,7 +34,7 @@ CFLAGS =		-g -pipe -pthread -msse2 -DNDEBUG -DDEBUGVM=0 -D_GNU_SOURCE -I/usr/loc
 #CFLAGS =		-g -pipe -pthread -msse2 -DDEBUGVM=1 -D_GNU_SOURCE -I/usr/local/include
 COPTS ?=		-O2
 SQ_LDFLAGS =		-L/usr/local/lib -Wl,-z,now
-SQ_LIBS =		-lpthread -lossp-uuid -lexecinfo
+SQ_LIBS =		-lpthread -lexecinfo
 WRKSRC =		${WRKDIST}/platforms/unix/config
 DESTDIRNAME =		ROOT
 ALL_TARGET =		getversion squeak plugins
@@ -56,12 +56,12 @@ SQ_OR =			${OST_OR:L}
 
 .if ${PROPERTIES:Mlp64}
 SQ_ARCH =		64x64
-CC +=			-m64
-CXX +=			-m64
+COPTS +=		-m64
+CXXOPTS +=		-m64
 .else
 SQ_ARCH =		32x86
-CC +=			-m32
-CXX +=			-m32
+COPTS +=		-m32
+CXXOPTS +=		-m32
 CFLAGS +=		-D_FILE_OFFSET_BITS=64
 .endif
 

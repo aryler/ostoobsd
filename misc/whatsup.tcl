@@ -71,7 +71,7 @@ lappend O $s
 
 namespace import ::tcl::mathop::+
 lappend O [format \
-	"Total  VM:%d  Total  Image:%d  Total  Sources:%d" \
+	"Total VM:%d  Total Image:%d  Total Sources:%d" \
 	[+ [llength [dict get $blob squeak_vm      dirs]] [llength [dict get $blob other_vm      dirs]]] \
 	[+ [llength [dict get $blob squeak_image   dirs]] [llength [dict get $blob other_image   dirs]]] \
 	[+ [llength [dict get $blob squeak_sources dirs]] [llength [dict get $blob other_sources dirs]]] \

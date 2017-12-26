@@ -14,4 +14,4 @@ For easy testing, install sources and images to taste.
 VMs can be run from the build dir:
 
 $ /usr/ports/pobj/squeak_cog_spur-5.1/build-i386/squeak \
-    /usr/local/share/opensmalltalk/Squeak5.1-16549-32bit.image
+    /usr/local/share/opensmalltalk/Squeak5.1-16551-32bit.image

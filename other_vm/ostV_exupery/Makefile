@@ -23,7 +23,7 @@ MASTER_SITES =		http://files.squeak.org/Exupery/vms/
 
 EXTRACT_SUFX =		.tz
 
-#LIB_DEPENDS =		devel/uuid devel/libexecinfo
+#LIB_DEPENDS =		devel/libexecinfo
 
 SEPARATE_BUILD =	Yes
 USE_GMAKE =		Yes
@@ -53,14 +53,10 @@ OST_VM_VER =		3.10-3
 
 .if ${PROPERTIES:Mlp64}
 SQ_ARCH =		64x64
-CC +=			-m64
-CXX +=			-m64
 # Builds gnu-interp
 CONFIGURE_ARGS +=	--with-gnu-awk=yes
 .else
 SQ_ARCH =		32x86
-CC +=			-m32
-CXX +=			-m32
 CFLAGS +=		-D_FILE_OFFSET_BITS=64
 .endif
 

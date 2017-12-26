@@ -7,6 +7,7 @@ lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-CogSpurVM/
 @bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-CogSpurVM/LocalePlugin
 @bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-CogSpurVM/SqueakFFIPrims
 @bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-CogSpurVM/SqueakSSL
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-CogSpurVM/UUIDPlugin
 @bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-CogSpurVM/UnixOSProcessPlugin
 @bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-CogSpurVM/XDisplayControlPlugin
 @bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-CogSpurVM/${OST_INTERP}

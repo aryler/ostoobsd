@@ -4,7 +4,7 @@ lib/${OST_HOME}/${OST_INTERP}/
 lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-SistaSpurVM/
 @bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-SistaSpurVM/B3DAcceleratorPlugin
 @bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-SistaSpurVM/EventsHandlerPlugin
-lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-SistaSpurVM/FT2Plugin.a
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-SistaSpurVM/FT2Plugin
 @bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-SistaSpurVM/InternetConfigPlugin
 @bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-SistaSpurVM/JPEGReadWriter2Plugin
 @bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-SistaSpurVM/JPEGReaderPlugin

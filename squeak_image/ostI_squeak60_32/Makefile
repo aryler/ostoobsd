@@ -1,7 +1,7 @@
 # $OpenBSD$
 
 V =			6.0alpha
-R =			17249
+R =			17606
 B =			_32
 BS =			${B:S/_/-/}bit
 

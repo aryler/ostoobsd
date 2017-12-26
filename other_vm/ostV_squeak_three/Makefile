@@ -32,6 +32,7 @@ CONFIGURE_ARGS +=	ac_cv_socklen_t=yes --without-npsqueak LDFLAGS='${SQ_LDFLAGS}'
 #CFLAGS =		-g -pipe -pthread -msse2 -DNDEBUG -DDEBUGVM=0 -D_GNU_SOURCE -I/usr/local/include -DNO_VM_PROFILE=1
 #CFLAGS =		-g -pipe -pthread -msse2 -DDEBUGVM=1 -D_GNU_SOURCE -I/usr/local/include
 CFLAGS =		-pipe -pthread
+CFLAGS += -Wno-return-type -Wno-int-to-pointer-cast -Wno-implicit-function-declaration
 COPTS ?=		-O2
 WRKSRC =		${WRKDIST}/platforms/unix/config
 DESTDIRNAME =		ROOT
@@ -50,14 +51,10 @@ OST_VM_VER =		${V}${P}
 
 .if ${PROPERTIES:Mlp64}
 SQ_ARCH =		64x64
-CC +=			-m64
-CXX +=			-m64
 # Builds gnu-interp
 CONFIGURE_ARGS +=	--with-gnu-awk=yes
 .else
 SQ_ARCH =		32x86
-CC +=			-m32
-CXX +=			-m32
 CFLAGS +=		-D_FILE_OFFSET_BITS=64
 .endif
 

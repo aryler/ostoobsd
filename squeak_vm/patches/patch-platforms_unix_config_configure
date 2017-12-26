@@ -1,6 +1,7 @@
 $OpenBSD$
---- platforms/unix/config/configure.orig	Wed Apr 26 13:18:56 2017
-+++ platforms/unix/config/configure	Wed Apr 26 13:20:20 2017
+Index: platforms/unix/config/configure
+--- platforms/unix/config/configure.orig
++++ platforms/unix/config/configure
 @@ -1690,7 +1690,7 @@ test "x$prefix" = xNONE && prefix=$ac_default_prefix
  test "x$exec_prefix" = xNONE && exec_prefix='${prefix}'
  imgdir=`eval echo ${libdir}/squeak`
@@ -9,4 +10,20 @@ $OpenBSD$
 +plgdir='${imgdir}/`${blddir}/getversion VM_VERSION`-`${blddir}/getversion VM_MONIKER`'
  
  
+ 
+@@ -29033,6 +29033,7 @@ plibs=""
+ rm -f UUIDPlugin.sub UUIDPlugin.lib
+ # -*- sh -*-
+ 
++if false; then
+ echo "$as_me:$LINENO: checking for UUID support uuid/uuid.h & uuid_generate" >&5
+ echo $ECHO_N "checking for UUID support uuid/uuid.h & uuid_generate... $ECHO_C" >&6
+ 
+@@ -29271,6 +29272,7 @@ echo "${ECHO_T}******** disabling ${plugin}" >&6
+   disabled_plugins="${disabled_plugins} ${plugin}"
+ fi
+ rm -f conftest.err conftest.$ac_objext conftest.$ac_ext
++fi
+ fi
+ rm -f conftest.err conftest.$ac_objext conftest.$ac_ext
  

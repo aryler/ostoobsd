@@ -16,11 +16,8 @@ CONFIGURE_ARGS +=	--with-vmversion=5.0 --disable-cogit
 
 CFLAGS +=		-DPharoVM -DIMMUTABILITY=1
 
-.if ! ${PROPERTIES:Mlp64}
-# Any combination of one or more will build a non-crashing vm.
-#CFLAGS +=		-fno-pie
+# 2017/12/25 cointerp doesn't build
 MAKE_FLAGS +=		INTERP=interp
-.endif
 
 post-extract:
 .if ${PROPERTIES:Mlp64}

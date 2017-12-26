@@ -1,13 +1,15 @@
 $OpenBSD$
 pharo
---- platforms/unix/plugins/FT2Plugin/Makefile.in.orig	Wed Apr 26 17:26:41 2017
-+++ platforms/unix/plugins/FT2Plugin/Makefile.in	Wed Apr 26 17:26:52 2017
-@@ -6,7 +6,7 @@
+Index: platforms/unix/plugins/FT2Plugin/Makefile.in
+--- platforms/unix/plugins/FT2Plugin/Makefile.in.orig
++++ platforms/unix/plugins/FT2Plugin/Makefile.in
+@@ -6,7 +6,8 @@
  
  TARGET= FT2Plugin$a
  OBJS= FT2Plugin$o 
 -XINCLUDES= [includes] -I/usr/include/freetype2
 +XINCLUDES= [includes] -I/usr/X11R6/include/freetype2
++XLDFLAGS= -L/usr/X11R6/lib
  
  $(TARGET) : $(OBJS) Makefile
  	$(LINK) $(TARGET) $(OBJS) -lfreetype 

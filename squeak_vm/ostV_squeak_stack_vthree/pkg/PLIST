@@ -7,6 +7,7 @@ lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-StackV3VM/
 @bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-StackV3VM/LocalePlugin
 @bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-StackV3VM/SqueakFFIPrims
 @bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-StackV3VM/SqueakSSL
+@bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-StackV3VM/UUIDPlugin
 @bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-StackV3VM/UnixOSProcessPlugin
 @bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-StackV3VM/XDisplayControlPlugin
 @bin lib/${OST_HOME}/${OST_INTERP}/${OST_VM_VER}-StackV3VM/${OST_INTERP}

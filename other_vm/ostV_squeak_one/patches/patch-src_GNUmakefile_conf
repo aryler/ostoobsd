@@ -10,7 +10,7 @@ Index: src/GNUmakefile.conf
 +
 +ifeq ($(SYSTEM),					openbsd)
 +  CC=		cc
-+  CCFLAGS:=	-pipe -pthread -O2 -g $(PROFILE) -Wall
++  CCFLAGS:=	-pipe -pthread -O2 -g $(PROFILE) -Wall -Wno-int-to-pointer-cast -Wno-return-type -Wno-unused-label
 +  INCDIRS=	-I/usr/local/include -I/usr/X11R6/include
 +  LDO=		ld -r
 +  LD=		cc
