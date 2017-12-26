@@ -1,0 +1,6 @@
+@comment $OpenBSD$
+@option no-default-conflict
+@conflict ${FULLPKGNAME}
+share/${OST_HOME}/
+share/${OST_HOME}/Pharo${OST_IMG_VER}-${OST_IMG_REL}-32bit.changes
+share/${OST_HOME}/Pharo${OST_IMG_VER}-${OST_IMG_REL}-32bit.image

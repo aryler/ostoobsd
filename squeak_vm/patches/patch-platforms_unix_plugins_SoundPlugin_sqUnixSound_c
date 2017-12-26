@@ -1,0 +1,16 @@
+$OpenBSD$
+
+Index: platforms/unix/plugins/SoundPlugin/sqUnixSound.c
+--- platforms/unix/plugins/SoundPlugin/sqUnixSound.c.orig
++++ platforms/unix/plugins/SoundPlugin/sqUnixSound.c
+@@ -195,8 +195,8 @@ char *getDefaultSoundPlayer(void)                   { 
+ char *getDefaultSoundRecorder(void)                 { return -1; }
+ char *getSoundPlayerDeviceName(sqInt i)             { return -1; }
+ char *getSoundRecorderDeviceName(sqInt i)           { return -1; }
+-void  setDefaultSoundPlayer(char *deviceName)       { return -1; }
+-void  setDefaultSoundRecorder(char *deviceName)     { return -1; }
++void  setDefaultSoundPlayer(char *deviceName)       {            }
++void  setDefaultSoundRecorder(char *deviceName)     {            }
+ #endif /* SqSoundVersionMajor > 1 || SqSoundVersionMinor >= 2 */
+ 
+ #if SqSoundVersionMajor > 1 || SqSoundVersionMinor >= 3

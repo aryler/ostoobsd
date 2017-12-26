@@ -1,0 +1,10 @@
+$OpenBSD$
+
+Index: platforms/unix/plugins/SqueakSSL/Makefile.inc
+--- platforms/unix/plugins/SqueakSSL/Makefile.inc.orig
++++ platforms/unix/plugins/SqueakSSL/Makefile.inc
+@@ -1,2 +1,2 @@
+-#XLDFLAGS=	-lcrypto -lssl
+-XLDFLAGS=	-Wl,--no-as-needed -lrt -Wl,-Bstatic -lcrypto -lssl -Wl,-Bdynamic -lrt
++XLDFLAGS=	-lcrypto -lssl
++#XLDFLAGS=	-Wl,--no-as-needed -lrt -Wl,-Bstatic -lcrypto -lssl -Wl,-Bdynamic -lrt
