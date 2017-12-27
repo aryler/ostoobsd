@@ -56,12 +56,8 @@ SQ_OR =			${OST_OR:L}
 
 .if ${PROPERTIES:Mlp64}
 SQ_ARCH =		64x64
-COPTS +=		-m64
-CXXOPTS +=		-m64
 .else
 SQ_ARCH =		32x86
-COPTS +=		-m32
-CXXOPTS +=		-m32
 CFLAGS +=		-D_FILE_OFFSET_BITS=64
 .endif
 

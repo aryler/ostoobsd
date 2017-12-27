@@ -1,5 +1,8 @@
 $OpenBSD$
 
+Lucky for me I saw this:
+https://marc.info/?l=openbsd-ports-cvs&m=151418549225198&w=2
+
 Index: platforms/unix/config/make.prg.in
 --- platforms/unix/config/make.prg.in.orig
 +++ platforms/unix/config/make.prg.in
