@@ -1,0 +1,23 @@
+$OpenBSD$
+
+Index: platforms/Cross/plugins/Mpeg3Plugin/libmpeg/audio/pcm.c
+--- platforms/Cross/plugins/Mpeg3Plugin/libmpeg/audio/pcm.c.orig
++++ platforms/Cross/plugins/Mpeg3Plugin/libmpeg/audio/pcm.c
+@@ -34,6 +34,17 @@
+ #include "mpeg3audio.h"
+ #include "mpeg3private.inc"
+ 
++
++/* mpeg3audio.c */
++extern int mpeg3audio_replace_buffer(mpeg3audio_t *audio, long new_allocation);
++
++/* ../bitsream.c */
++extern int mpeg3bits_read_buffer(mpeg3_bits_t* stream, unsigned char *buffer, int bytes);
++
++/* ../mpeg3demux.c */
++extern int mpeg3demux_eof(mpeg3_demuxer_t *demuxer);
++
++
+ int mpeg3audio_read_pcm_header(mpeg3audio_t *audio)
+ {
+ 	unsigned int code;

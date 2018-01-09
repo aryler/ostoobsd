@@ -1,0 +1,23 @@
+$OpenBSD$
+
+Index: platforms/Cross/plugins/Mpeg3Plugin/libmpeg/audio/header.c
+--- platforms/Cross/plugins/Mpeg3Plugin/libmpeg/audio/header.c.orig
++++ platforms/Cross/plugins/Mpeg3Plugin/libmpeg/audio/header.c
+@@ -35,6 +35,17 @@
+ 
+ #include <stdio.h>
+ 
++
++/* ../bitsream.c */
++extern int mpeg3bits_refill(mpeg3_bits_t* stream);
++
++/* ../mpeg3demux.c */
++extern int mpeg3demux_eof(mpeg3_demuxer_t *demuxer);
++
++/* pcm.c */
++extern int mpeg3audio_read_pcm_header(mpeg3audio_t *audio);
++
++
+ /* Return 1 if the head check doesn't find a header. */
+ int mpeg3audio_head_check(unsigned long head)
+ {

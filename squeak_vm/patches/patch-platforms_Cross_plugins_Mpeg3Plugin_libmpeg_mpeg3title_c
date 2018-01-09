@@ -1,0 +1,17 @@
+$OpenBSD$
+
+Index: platforms/Cross/plugins/Mpeg3Plugin/libmpeg/mpeg3title.c
+--- platforms/Cross/plugins/Mpeg3Plugin/libmpeg/mpeg3title.c.orig
++++ platforms/Cross/plugins/Mpeg3Plugin/libmpeg/mpeg3title.c
+@@ -36,6 +36,11 @@
+ 
+ #include <stdlib.h>
+ 
++
++/* mpeg3io.c */
++extern int mpeg3_copy_fs(mpeg3_fs_t *dst, mpeg3_fs_t *src);
++
++
+ mpeg3_title_t* mpeg3_new_title(mpeg3_t *file, char *path)
+ {
+ 	mpeg3_title_t *title = (mpeg3_title_t *) memoryAllocate(1, sizeof(mpeg3_title_t));

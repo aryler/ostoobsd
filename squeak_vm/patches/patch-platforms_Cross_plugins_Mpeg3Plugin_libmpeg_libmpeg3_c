@@ -1,0 +1,49 @@
+$OpenBSD$
+
+Index: platforms/Cross/plugins/Mpeg3Plugin/libmpeg/libmpeg3.c
+--- platforms/Cross/plugins/Mpeg3Plugin/libmpeg/libmpeg3.c.orig
++++ platforms/Cross/plugins/Mpeg3Plugin/libmpeg/libmpeg3.c
+@@ -41,6 +41,43 @@
+ 
+ #define MAX(a, b) ((a) > (b) ? (a) : (b))
+ 
++
++/* mpeg3demux.c */
++extern int mpeg3demux_copy_titles(mpeg3_demuxer_t *dst, mpeg3_demuxer_t *src);
++extern int mpeg3demux_create_title(mpeg3_demuxer_t *demuxer, int timecode_search, FILE *toc);
++extern int mpeg3demux_print_streams(mpeg3_demuxer_t *demuxer, FILE *toc);
++extern int mpeg3demux_print_timecodes(mpeg3_title_t *title, FILE *output);
++extern int mpeg3demux_read_titles(mpeg3_demuxer_t *demuxer);
++
++/* mpeg3io.c */
++extern int mpeg3io_seek(mpeg3_fs_t *fs, long byte);
++
++/* audio/mpeg3audio.c */
++extern int mpeg3audio_decode_audio(mpeg3audio_t *audio, float *output_f, short *output_i, int channel, long start_position, long len);
++extern int mpeg3audio_read_raw(mpeg3audio_t *audio, unsigned char *output, long *size, long max_size);
++extern int mpeg3audio_seek_percentage(mpeg3audio_t *audio, double percentage);
++extern int mpeg3audio_seek_sample(mpeg3audio_t *audio, long sample);
++
++/* video/mmxtest.c */
++extern int mpeg3_mmx_test();
++
++/* video/mpeg3video.c */
++extern int mpeg3video_previous_frame(mpeg3video_t *video);
++extern int mpeg3video_read_raw(mpeg3video_t *video, unsigned char *output, long *size, long max_size);
++extern int mpeg3video_read_yuvframe(mpeg3video_t *video, long frame_number, char *y_output, char *u_output, char *v_output, int in_x, int in_y, int in_w, int in_h);
++extern int mpeg3video_seek_frame(mpeg3video_t *video, long frame);
++extern int mpeg3video_seek_percentage(mpeg3video_t *video, double percentage);
++extern int mpeg3video_set_cpus(mpeg3video_t *video, int cpus);
++extern int mpeg3video_set_mmx(mpeg3video_t *video, int use_mmx);
++
++/* video/seek.c */
++extern int mpeg3video_drop_frames(mpeg3video_t *video, long frames);
++
++
++/* This file. */
++int mpeg3_read_toc(mpeg3_t *file);
++
++
+ mpeg3_t* mpeg3_new(char *path,int size)
+ {
+ 	int i;

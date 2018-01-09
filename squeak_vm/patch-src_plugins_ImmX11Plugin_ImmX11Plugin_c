@@ -1,0 +1,17 @@
+$OpenBSD$
+
+Index: src/plugins/ImmX11Plugin/ImmX11Plugin.c
+--- src/plugins/ImmX11Plugin/ImmX11Plugin.c.orig
++++ src/plugins/ImmX11Plugin/ImmX11Plugin.c
+@@ -22,6 +22,11 @@ static char __buildInfo[] = "ImmX11Plugin VMMaker.osco
+ #include "sqVirtualMachine.h"	/*  The virtual machine proxy definition */
+ #include "sqPlatformSpecific.h"	/* Platform specific definitions */
+ 
++
++/* platforms/unix/vm-display-X11/sqUnixX11.c */
++extern int setCompositionFocus(int focus);
++
++
+ #define true 1
+ #define false 0
+ #define null 0  /* using 'null' because nil is predefined in Think C */

@@ -1,0 +1,212 @@
+$OpenBSD$
+
+Index: platforms/unix/vm/sqUnixMain.c
+--- platforms/unix/vm/sqUnixMain.c.orig
++++ platforms/unix/vm/sqUnixMain.c
+@@ -63,9 +63,6 @@
+ # include <execinfo.h>
+ # define BACKTRACE_DEPTH 64
+ #endif
+-#if __OpenBSD__
+-# include <sys/signal.h>
+-#endif
+ # if __sun__
+   # include <limits.h>
+ # endif
+@@ -287,12 +284,12 @@ time_t convertToSqueakTime(time_t unixTime)
+ static void pathCopyAbs(char *target, const char *src, size_t targetSize)
+ {
+   if (src[0] == '/')
+-    strcpy(target, src);
++    strlcpy(target, src, targetSize);
+   else
+     {
+       0 == getcwd(target, targetSize);
+-      strcat(target, "/");
+-      strcat(target, src);
++      strlcat(target, "/", targetSize);
++      strlcat(target, src, targetSize);
+     }
+ }
+ 
+@@ -349,7 +346,7 @@ recordFullPathForImageName(const char *localImageName)
+ #if CRASH_DUMP_IN_CWD
+ 	getcwd(vmLogDirA,PATH_MAX);
+ #else
+-	strcpy(vmLogDirA,imageName);
++	strlcpy(vmLogDirA, imageName, sizeof(vmLogDirA));
+ 	if (strrchr(vmLogDirA,'/'))
+ 		*strrchr(vmLogDirA,'/') = 0;
+ 	else
+@@ -581,6 +578,7 @@ static void emergencyDump(int quit)
+   extern sqInt preSnapshot(void);
+   extern sqInt postSnapshot(void);
+   extern void writeImageFile(sqInt);
++  extern void printCallStack(void);
+   char savedName[MAXPATHLEN];
+   char baseName[MAXPATHLEN];
+   char *term;
+@@ -824,6 +822,7 @@ sqInt  primitivePluginRequestState(void)	{ return dpy-
+ 
+ static void outOfMemory(void)
+ {
++  extern void pushOutputFile(char *);
+   /* pushing stderr outputs the error report on stderr instead of stdout */
+   pushOutputFile((char *)STDERR_FILENO);
+   error("out of memory\n");
+@@ -911,15 +910,18 @@ reportStackState(char *msg, char *date, int printAll, 
+ # endif
+ 			char *savedSP, *savedFP;
+ 
++			extern void ifValidWriteBackStackPointersSaveTo(void *theCFP, void *theCSP, char **savedFPP, char **savedSPP);
+ 			ifValidWriteBackStackPointersSaveTo(fp,sp,&savedFP,&savedSP);
+ #endif /* COGVM */
+ 
+ 			printingStack = true;
+ 			if (printAll) {
++				extern void printAllStacks(void);
+ 				printf("\n\nAll Smalltalk process stacks (active first):\n");
+ 				printAllStacks();
+ 			}
+ 			else {
++				extern void printCallStack(void);
+ 				printf("\n\nSmalltalk stack dump:\n");
+ 				printCallStack();
+ 			}
+@@ -1027,14 +1029,17 @@ error(char *msg)
+ static void
+ getCrashDumpFilenameInto(char *buf)
+ {
+-	strcpy(buf,vmLogDirA);
+-	vmLogDirA[0] && strcat(buf, "/");
+-	strcat(buf, "crash.dmp");
++	size_t bufSize = MAXPATHLEN+1;
++	strlcpy(buf, vmLogDirA, bufSize);
++	vmLogDirA[0] && strlcat(buf, "/", bufSize);
++	strlcat(buf, "crash.dmp", bufSize);
+ }
+ 
+ static void
+ sigusr1(int sig, siginfo_t *info, void *uap)
+ {
++	extern void pushOutputFile(char *);
++	extern void popOutputFile(void);
+ 	int saved_errno = errno;
+ 	time_t now = time(NULL);
+ 	char ctimebuf[32];
+@@ -1074,6 +1079,8 @@ sigsegv(int sig, siginfo_t *info, void *uap)
+ 							: "Unknown signal"));
+ 
+ 	if (!inFault) {
++		extern void pushOutputFile(char *);
++		extern void popOutputFile(void);
+ 		inFault = 1;
+ 		getCrashDumpFilenameInto(crashdump);
+ 		ctime_r(&now,ctimebuf);
+@@ -1367,11 +1374,11 @@ static void vm_parseEnvironment(void)
+     fprintf(stderr, "setlocale() failed (check values of LC_CTYPE, LANG and LC_ALL)\n");
+ 
+   if (documentName)
+-    strcpy(shortImageName, documentName);
++    strlcpy(shortImageName, documentName, sizeof(shortImageName));
+   else if ((ev= getenv(IMAGE_ENV_NAME)))
+-    strcpy(shortImageName, ev);
++    strlcpy(shortImageName, ev, sizeof(shortImageName));
+   else
+-    strcpy(shortImageName, DEFAULT_IMAGE_NAME);
++    strlcpy(shortImageName, DEFAULT_IMAGE_NAME, sizeof(shortImageName));
+ 
+   if ((ev= getenv("SQUEAK_MEMORY")))	extraMemory= strtobkm(ev);
+   if ((ev= getenv("SQUEAK_MMAP")))	useMmap= strtobkm(ev);
+@@ -1748,7 +1755,8 @@ char *getVersionInfo(int verbose)
+ #endif
+   extern char *revisionAsString();
+   extern char *vm_date, *cc_version, *ux_version;
+-  char *info= (char *)malloc(4096);
++#define SQ_INFO_SIZE 4096
++  char *info= (char *)malloc(SQ_INFO_SIZE);
+   info[0]= '\0';
+ 
+ #if SPURVM
+@@ -1775,30 +1783,31 @@ char *getVersionInfo(int verbose)
+ #endif
+ 
+   if (verbose)
+-    sprintf(info+strlen(info), IMAGE_DIALECT_NAME " VM version: ");
+-  sprintf(info+strlen(info), "%s-%s ", VM_VERSION, revisionAsString());
++    snprintf(info+strlen(info), SQ_INFO_SIZE, IMAGE_DIALECT_NAME " VM version: ");
++  snprintf(info+strlen(info), SQ_INFO_SIZE, "%s-%s ", VM_VERSION, revisionAsString());
+ #if defined(USE_XSHM)
+-  sprintf(info+strlen(info), " XShm");
++  snprintf(info+strlen(info), SQ_INFO_SIZE, " XShm");
+ #endif
+-  sprintf(info+strlen(info), " %s %s [" BuildVariant HBID " VM]\n", vm_date, cc_version);
++  snprintf(info+strlen(info), SQ_INFO_SIZE, " %s %s [" BuildVariant HBID " VM]\n", vm_date, cc_version);
+   if (verbose)
+-    sprintf(info+strlen(info), "Built from: ");
+-  sprintf(info+strlen(info), "%s\n", INTERP_BUILD);
++    snprintf(info+strlen(info), SQ_INFO_SIZE, "Built from: ");
++  snprintf(info+strlen(info), SQ_INFO_SIZE, "%s\n", INTERP_BUILD);
+ #if COGVM
+   if (verbose)
+-    sprintf(info+strlen(info), "With: ");
+-  sprintf(info+strlen(info), "%s\n", GetAttributeString(1008)); /* __cogitBuildInfo */
++    snprintf(info+strlen(info), SQ_INFO_SIZE, "With: ");
++  snprintf(info+strlen(info), SQ_INFO_SIZE, "%s\n", GetAttributeString(1008)); /* __cogitBuildInfo */
+ #endif
+   if (verbose)
+-    sprintf(info+strlen(info), "Revision: ");
+-  sprintf(info+strlen(info), "%s\n", sourceVersionString('\n'));
++    snprintf(info+strlen(info), SQ_INFO_SIZE, "Revision: ");
++  snprintf(info+strlen(info), SQ_INFO_SIZE, "%s\n", sourceVersionString('\n'));
+   if (verbose)
+-    sprintf(info+strlen(info), "Build host: ");
+-  sprintf(info+strlen(info), "%s\n", ux_version);
+-  sprintf(info+strlen(info), "plugin path: %s [default: %s]\n", squeakPlugins, vmPath);
++    snprintf(info+strlen(info), SQ_INFO_SIZE, "Build host: ");
++  snprintf(info+strlen(info), SQ_INFO_SIZE, "%s\n", ux_version);
++  snprintf(info+strlen(info), SQ_INFO_SIZE, "plugin path: %s [default: %s]\n", squeakPlugins, vmPath);
+   return info;
+ }
+ 
++#undef SQ_INFO_SIZE
+ 
+ static void versionInfo(void)
+ {
+@@ -1848,9 +1857,9 @@ static void parseArguments(int argc, char **argv)
+   else					/* image name */
+     {
+       if (!documentName)
+-	strcpy(shortImageName, saveArg());
++	strlcpy(shortImageName, saveArg(), sizeof(shortImageName));
+       if (!strstr(shortImageName, ".image"))
+-	strcat(shortImageName, ".image");
++	strlcat(shortImageName, ".image", sizeof(shortImageName));
+     }
+   /* save remaining arguments as Squeak arguments */
+   while (argc > 0)
+@@ -2037,6 +2046,8 @@ main(int argc, char **argv, char **envp)
+   printf("documentName: %s\n", documentName);
+ #endif
+ 
++void ioInitTime(void);
++
+   ioInitTime();
+   ioInitThreads();
+   aioInit();
+@@ -2158,13 +2169,13 @@ sqInt sqGetFilenameFromString(char *aCharBuffer, char 
+ 	    linkbuf[filenameLength]= 0;
+ 
+ 	    if (filenameLength > 0 && *linkbuf == '/') /* absolute */
+-	      strcpy(aCharBuffer, linkbuf);
++	      strlcpy(aCharBuffer, linkbuf, PATH_MAX);
+ 	    else {
+ 	      char *lastSeparator = strrchr(aCharBuffer,'/');
+ 	      char *append = lastSeparator ? lastSeparator + 1 : aCharBuffer;
+ 	      if (append - aCharBuffer + strlen(linkbuf) > PATH_MAX)
+ 		return -1; /* path too long */
+-	      strcpy(append,linkbuf);
++	      strlcpy(append, linkbuf, PATH_MAX - (append - aCharBuffer));
+ 	    }
+ 
+ 	    continue;

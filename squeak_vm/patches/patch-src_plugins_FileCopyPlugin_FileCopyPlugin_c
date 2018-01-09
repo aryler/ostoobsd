@@ -1,0 +1,17 @@
+$OpenBSD$
+
+Index: src/plugins/FileCopyPlugin/FileCopyPlugin.c
+--- src/plugins/FileCopyPlugin/FileCopyPlugin.c.orig
++++ src/plugins/FileCopyPlugin/FileCopyPlugin.c
+@@ -21,6 +21,11 @@ static char __buildInfo[] = "FileCopyPlugin VMMaker.os
+ #include "sqVirtualMachine.h"	/*  The virtual machine proxy definition */
+ #include "sqPlatformSpecific.h"	/* Platform specific definitions */
+ 
++
++/* platforms/unix/plugins/FileCopyPlugin/sqUnixFileCopyPlugin.c */
++extern int sqCopyFilesizetosize(char *srcName, int srcNameSize, char *dstName, int dstNameSize);
++
++
+ #define true 1
+ #define false 0
+ #define null 0  /* using 'null' because nil is predefined in Think C */

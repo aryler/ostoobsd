@@ -1,0 +1,22 @@
+$OpenBSD$
+
+Index: platforms/Cross/plugins/Mpeg3Plugin/libmpeg/audio/layer2.c
+--- platforms/Cross/plugins/Mpeg3Plugin/libmpeg/audio/layer2.c.orig
++++ platforms/Cross/plugins/Mpeg3Plugin/libmpeg/audio/layer2.c
+@@ -35,6 +35,16 @@
+  */
+ 
+ #include "mpeg3audio.h"
++
++
++/* mpeg3audio.c */
++extern int mpeg3audio_replace_buffer(mpeg3audio_t *audio, long new_allocation);
++
++/* synthesizers.c */
++extern int mpeg3audio_synth_mono(mpeg3audio_t *audio, float *bandPtr, float *samples, int *pnt);
++extern int mpeg3audio_synth_stereo(mpeg3audio_t *audio, float *bandPtr, int channel, float *out, int *pnt);
++
++
+ #include "tables.h"
+ 
+ struct al_table alloc_0[] = {

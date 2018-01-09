@@ -1,0 +1,1194 @@
+@comment $OpenBSD$
+share/${OST_HOME}/
+share/${OST_HOME}/scratch/
+share/${OST_HOME}/scratch/Help/
+share/${OST_HOME}/scratch/Help/en/
+share/${OST_HOME}/scratch/Help/en/addList.gif
+share/${OST_HOME}/scratch/Help/en/addVariable.gif
+share/${OST_HOME}/scratch/Help/en/allMotorsOff.gif
+share/${OST_HOME}/scratch/Help/en/allMotorsOn.gif
+share/${OST_HOME}/scratch/Help/en/allscreens.html
+share/${OST_HOME}/scratch/Help/en/and.gif
+share/${OST_HOME}/scratch/Help/en/answer.gif
+share/${OST_HOME}/scratch/Help/en/append_toList_.gif
+share/${OST_HOME}/scratch/Help/en/backgroundIndex.gif
+share/${OST_HOME}/scratch/Help/en/bounceOffEdge.gif
+share/${OST_HOME}/scratch/Help/en/broadcastHat.gif
+share/${OST_HOME}/scratch/Help/en/broadcast_.gif
+share/${OST_HOME}/scratch/Help/en/changeGraphicEffect_by_.gif
+share/${OST_HOME}/scratch/Help/en/changePenHueBy_.gif
+share/${OST_HOME}/scratch/Help/en/changePenShadeBy_.gif
+share/${OST_HOME}/scratch/Help/en/changePenSizeBy_.gif
+share/${OST_HOME}/scratch/Help/en/changeSizeBy_.gif
+share/${OST_HOME}/scratch/Help/en/changeTempoBy_.gif
+share/${OST_HOME}/scratch/Help/en/changeVolumeBy_.gif
+share/${OST_HOME}/scratch/Help/en/changeXposBy_.gif
+share/${OST_HOME}/scratch/Help/en/changeYposBy_.gif
+share/${OST_HOME}/scratch/Help/en/clearPenTrails.gif
+share/${OST_HOME}/scratch/Help/en/color_sees_.gif
+share/${OST_HOME}/scratch/Help/en/comeToFront.gif
+share/${OST_HOME}/scratch/Help/en/computeFunction_of_.gif
+share/${OST_HOME}/scratch/Help/en/concatenate_with_.gif
+share/${OST_HOME}/scratch/Help/en/contentsOfList_.gif
+share/${OST_HOME}/scratch/Help/en/costumeIndex.gif
+share/${OST_HOME}/scratch/Help/en/deleteLine_ofList_.gif
+share/${OST_HOME}/scratch/Help/en/deleteList.gif
+share/${OST_HOME}/scratch/Help/en/deleteVariable.gif
+share/${OST_HOME}/scratch/Help/en/distanceTo_.gif
+share/${OST_HOME}/scratch/Help/en/divide.gif
+share/${OST_HOME}/scratch/Help/en/doAsk.gif
+share/${OST_HOME}/scratch/Help/en/doBroadcastAndWait.gif
+share/${OST_HOME}/scratch/Help/en/doForever.gif
+share/${OST_HOME}/scratch/Help/en/doForeverIf.gif
+share/${OST_HOME}/scratch/Help/en/doIf.gif
+share/${OST_HOME}/scratch/Help/en/doIfElse.gif
+share/${OST_HOME}/scratch/Help/en/doPlaySoundAndWait.gif
+share/${OST_HOME}/scratch/Help/en/doRepeat.gif
+share/${OST_HOME}/scratch/Help/en/doReturn.gif
+share/${OST_HOME}/scratch/Help/en/doUntil.gif
+share/${OST_HOME}/scratch/Help/en/doWaitUntil.gif
+share/${OST_HOME}/scratch/Help/en/drum_duration_elapsed_from_.gif
+share/${OST_HOME}/scratch/Help/en/equals.gif
+share/${OST_HOME}/scratch/Help/en/filterReset.gif
+share/${OST_HOME}/scratch/Help/en/forward_.gif
+share/${OST_HOME}/scratch/Help/en/getAttribute_of_.gif
+share/${OST_HOME}/scratch/Help/en/getLine_ofList_.gif
+share/${OST_HOME}/scratch/Help/en/glideSecs_toX_y_elapsed_from_.gif
+share/${OST_HOME}/scratch/Help/en/goBackByLayers_.gif
+share/${OST_HOME}/scratch/Help/en/gotoSpriteOrMouse_.gif
+share/${OST_HOME}/scratch/Help/en/gotoX_y_.gif
+share/${OST_HOME}/scratch/Help/en/greaterThan.gif
+share/${OST_HOME}/scratch/Help/en/heading.gif
+share/${OST_HOME}/scratch/Help/en/heading_.gif
+share/${OST_HOME}/scratch/Help/en/hide.gif
+share/${OST_HOME}/scratch/Help/en/hideVariable_.gif
+share/${OST_HOME}/scratch/Help/en/images/
+share/${OST_HOME}/scratch/Help/en/images/getting-started-thumb.gif
+share/${OST_HOME}/scratch/Help/en/images/help-menu.gif
+share/${OST_HOME}/scratch/Help/en/images/helpscreens-thumb.gif
+share/${OST_HOME}/scratch/Help/en/images/scratch-interface-1.gif
+share/${OST_HOME}/scratch/Help/en/images/scratch-logo.gif
+share/${OST_HOME}/scratch/Help/en/images/support-site.gif
+share/${OST_HOME}/scratch/Help/en/index.html
+share/${OST_HOME}/scratch/Help/en/insert_at_ofList_.gif
+share/${OST_HOME}/scratch/Help/en/isLoud.gif
+share/${OST_HOME}/scratch/Help/en/keyHat.gif
+share/${OST_HOME}/scratch/Help/en/keyPressed_.gif
+share/${OST_HOME}/scratch/Help/en/lessThan.gif
+share/${OST_HOME}/scratch/Help/en/letter_of_.gif
+share/${OST_HOME}/scratch/Help/en/lineCountOfList_.gif
+share/${OST_HOME}/scratch/Help/en/list_contains_.gif
+share/${OST_HOME}/scratch/Help/en/lookLike_.gif
+share/${OST_HOME}/scratch/Help/en/midiInstrument_.gif
+share/${OST_HOME}/scratch/Help/en/minus.gif
+share/${OST_HOME}/scratch/Help/en/mod.gif
+share/${OST_HOME}/scratch/Help/en/motorOnFor_elapsed_from_.gif
+share/${OST_HOME}/scratch/Help/en/mousePressed.gif
+share/${OST_HOME}/scratch/Help/en/mouseX.gif
+share/${OST_HOME}/scratch/Help/en/mouseY.gif
+share/${OST_HOME}/scratch/Help/en/mouseclickHat.gif
+share/${OST_HOME}/scratch/Help/en/nextBackground.gif
+share/${OST_HOME}/scratch/Help/en/nextCostume.gif
+share/${OST_HOME}/scratch/Help/en/not.gif
+share/${OST_HOME}/scratch/Help/en/noteOn_duration_elapsed_from_.gif
+share/${OST_HOME}/scratch/Help/en/or.gif
+share/${OST_HOME}/scratch/Help/en/penColor_.gif
+share/${OST_HOME}/scratch/Help/en/penSize_.gif
+share/${OST_HOME}/scratch/Help/en/playSound_.gif
+share/${OST_HOME}/scratch/Help/en/plus.gif
+share/${OST_HOME}/scratch/Help/en/pointTowards_.gif
+share/${OST_HOME}/scratch/Help/en/putPenDown.gif
+share/${OST_HOME}/scratch/Help/en/putPenUp.gif
+share/${OST_HOME}/scratch/Help/en/randomFrom_to_.gif
+share/${OST_HOME}/scratch/Help/en/rest_elapsed_from_.gif
+share/${OST_HOME}/scratch/Help/en/rounded.gif
+share/${OST_HOME}/scratch/Help/en/say_.gif
+share/${OST_HOME}/scratch/Help/en/say_duration_elapsed_from_.gif
+share/${OST_HOME}/scratch/Help/en/scale.gif
+share/${OST_HOME}/scratch/Help/en/sensorPressed_.gif
+share/${OST_HOME}/scratch/Help/en/sensor_.gif
+share/${OST_HOME}/scratch/Help/en/setGraphicEffect_to_.gif
+share/${OST_HOME}/scratch/Help/en/setLine_ofList_to_.gif
+share/${OST_HOME}/scratch/Help/en/setMotorDirection_.gif
+share/${OST_HOME}/scratch/Help/en/setPenHueTo_.gif
+share/${OST_HOME}/scratch/Help/en/setPenShadeTo_.gif
+share/${OST_HOME}/scratch/Help/en/setSizeTo_.gif
+share/${OST_HOME}/scratch/Help/en/setTempoTo_.gif
+share/${OST_HOME}/scratch/Help/en/setVolumeTo_.gif
+share/${OST_HOME}/scratch/Help/en/show.gif
+share/${OST_HOME}/scratch/Help/en/showBackground_.gif
+share/${OST_HOME}/scratch/Help/en/showVariable_.gif
+share/${OST_HOME}/scratch/Help/en/soundLevel.gif
+share/${OST_HOME}/scratch/Help/en/stampCostume.gif
+share/${OST_HOME}/scratch/Help/en/startHat.gif
+share/${OST_HOME}/scratch/Help/en/startMotorPower_.gif
+share/${OST_HOME}/scratch/Help/en/stopAll.gif
+share/${OST_HOME}/scratch/Help/en/stopAllSounds.gif
+share/${OST_HOME}/scratch/Help/en/stringLength_.gif
+share/${OST_HOME}/scratch/Help/en/tempo.gif
+share/${OST_HOME}/scratch/Help/en/think_.gif
+share/${OST_HOME}/scratch/Help/en/think_duration_elapsed_from_.gif
+share/${OST_HOME}/scratch/Help/en/timer.gif
+share/${OST_HOME}/scratch/Help/en/timerReset.gif
+share/${OST_HOME}/scratch/Help/en/times.gif
+share/${OST_HOME}/scratch/Help/en/touchingColor_.gif
+share/${OST_HOME}/scratch/Help/en/touching_.gif
+share/${OST_HOME}/scratch/Help/en/turnLeft_.gif
+share/${OST_HOME}/scratch/Help/en/turnRight_.gif
+share/${OST_HOME}/scratch/Help/en/variable.gif
+share/${OST_HOME}/scratch/Help/en/variableChangeBy.gif
+share/${OST_HOME}/scratch/Help/en/variableSet.gif
+share/${OST_HOME}/scratch/Help/en/volume.gif
+share/${OST_HOME}/scratch/Help/en/wait_elapsed_from_.gif
+share/${OST_HOME}/scratch/Help/en/xpos.gif
+share/${OST_HOME}/scratch/Help/en/xpos_.gif
+share/${OST_HOME}/scratch/Help/en/ypos.gif
+share/${OST_HOME}/scratch/Help/en/ypos_.gif
+share/${OST_HOME}/scratch/Media/
+share/${OST_HOME}/scratch/Media/Backgrounds/
+share/${OST_HOME}/scratch/Media/Backgrounds/Indoors/
+share/${OST_HOME}/scratch/Media/Backgrounds/Indoors/bedroom1.gif
+share/${OST_HOME}/scratch/Media/Backgrounds/Indoors/bedroom2.gif
+share/${OST_HOME}/scratch/Media/Backgrounds/Indoors/chalkboard.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Indoors/clothing-store.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Indoors/hall.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Indoors/kitchen.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Indoors/party-room.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Indoors/room1.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Indoors/room2.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Indoors/room3.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Indoors/scratchthumbs.db
+share/${OST_HOME}/scratch/Media/Backgrounds/Indoors/spotlight-stage.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Indoors/the-movies-inside.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Nature/
+share/${OST_HOME}/scratch/Media/Backgrounds/Nature/beach-malibu.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Nature/canyon.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Nature/desert.gif
+share/${OST_HOME}/scratch/Media/Backgrounds/Nature/flower-bed.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Nature/flowers.gif
+share/${OST_HOME}/scratch/Media/Backgrounds/Nature/forest.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Nature/garden-rock.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Nature/grand-canyon.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Nature/gravel-desert.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Nature/hill.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Nature/lake.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Nature/moon.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Nature/pathway.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Nature/scratchthumbs.db
+share/${OST_HOME}/scratch/Media/Backgrounds/Nature/stars.gif
+share/${OST_HOME}/scratch/Media/Backgrounds/Nature/tree.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Nature/underwater.gif
+share/${OST_HOME}/scratch/Media/Backgrounds/Nature/water-and-rocks.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Nature/wave.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Nature/woods-and-bench.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Nature/woods.gif
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/all-sports-mural.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/atom-playground.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/bench-with-view.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/berkeley-mural.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/boardwalk.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/brick-wall-and-stairs.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/brick-wall1.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/brick-wall2.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/building-at-mit.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/building-fireproof.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/castle.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/city-with-water.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/city-with-water2.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/driveway.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/graffiti.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/hallway_outdoors.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/hay_field.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/houses.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/mansion.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/mural-faro.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/night-city-with-street.gif
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/night-city.gif
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/parking-ramp.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/pool.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/route66.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/school1.gif
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/school2.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/scratchthumbs.db
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/silos.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/the-movies.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/train-tracks1.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/train-tracks2.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/train-tracks3.gif
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/village.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Outdoors/wooden-house.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Sports/
+share/${OST_HOME}/scratch/Media/Backgrounds/Sports/baseball-field.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Sports/basketball-court1-a.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Sports/basketball-court1-b.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Sports/basketball-court2.png
+share/${OST_HOME}/scratch/Media/Backgrounds/Sports/football-field.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Sports/playing-field.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/Sports/scratchthumbs.db
+share/${OST_HOME}/scratch/Media/Backgrounds/Sports/tennis-backboard.jpg
+share/${OST_HOME}/scratch/Media/Backgrounds/scratchthumbs.db
+share/${OST_HOME}/scratch/Media/Backgrounds/xy-grid.gif
+share/${OST_HOME}/scratch/Media/Costumes/
+share/${OST_HOME}/scratch/Media/Costumes/Animals/
+share/${OST_HOME}/scratch/Media/Costumes/Animals/Crawling Ant.sprite
+share/${OST_HOME}/scratch/Media/Costumes/Animals/Follow-mouse Fish.sprite
+share/${OST_HOME}/scratch/Media/Costumes/Animals/Gravity Cat.sprite
+share/${OST_HOME}/scratch/Media/Costumes/Animals/Running Ant.sprite
+share/${OST_HOME}/scratch/Media/Costumes/Animals/bat1-a.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/bat1-b.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/bat2-a.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/bat2-b.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/bee1.gif
+share/${OST_HOME}/scratch/Media/Costumes/Animals/bird-flying.gif
+share/${OST_HOME}/scratch/Media/Costumes/Animals/buffalo1.gif
+share/${OST_HOME}/scratch/Media/Costumes/Animals/butterfly1-a.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/butterfly1-b.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/butterfly2.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/butterfly3.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/cat1-a.gif
+share/${OST_HOME}/scratch/Media/Costumes/Animals/cat1-b.gif
+share/${OST_HOME}/scratch/Media/Costumes/Animals/cat2.gif
+share/${OST_HOME}/scratch/Media/Costumes/Animals/cat3.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/cat4.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/cat5.gif
+share/${OST_HOME}/scratch/Media/Costumes/Animals/clam1.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/cow1.gif
+share/${OST_HOME}/scratch/Media/Costumes/Animals/crab1-a.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/crab1-b.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/crab2.gif
+share/${OST_HOME}/scratch/Media/Costumes/Animals/cub1.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/dinosaur1.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/dinosaur2.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/dog1-a.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/dog1-b.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/dog2-a.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/dog2-b.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/dog2-c.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/duck1.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/elephant.gif
+share/${OST_HOME}/scratch/Media/Costumes/Animals/elephant1-a.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/elephant1-b.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/fish1-a.gif
+share/${OST_HOME}/scratch/Media/Costumes/Animals/fish1-b.gif
+share/${OST_HOME}/scratch/Media/Costumes/Animals/fish2.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/fish3.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/fish4.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/fox1.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/frog1.gif
+share/${OST_HOME}/scratch/Media/Costumes/Animals/giraffe1-a.gif
+share/${OST_HOME}/scratch/Media/Costumes/Animals/giraffe1-b.gif
+share/${OST_HOME}/scratch/Media/Costumes/Animals/grasshopper1.gif
+share/${OST_HOME}/scratch/Media/Costumes/Animals/grasshopper2.gif
+share/${OST_HOME}/scratch/Media/Costumes/Animals/hippo1.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/horse1-a.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/horse1-b.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/horse2.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/insect1-a.gif
+share/${OST_HOME}/scratch/Media/Costumes/Animals/insect1-b.gif
+share/${OST_HOME}/scratch/Media/Costumes/Animals/insect2.gif
+share/${OST_HOME}/scratch/Media/Costumes/Animals/lion1-a.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/lion1-b.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/lioness1.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/lobster1.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/monkey1.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/mouse1.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/octopus1-a.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/octopus1-b.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/parrot1-a.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/parrot1-b.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/rabbit1.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/scratchthumbs.db
+share/${OST_HOME}/scratch/Media/Costumes/Animals/shark1-a.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/shark1-b.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/shark1-c.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/squirrel1.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/starfish1-a.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/starfish1-b.png
+share/${OST_HOME}/scratch/Media/Costumes/Animals/whale1.gif
+share/${OST_HOME}/scratch/Media/Costumes/Animals/zebra1.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/Growing Dragon.sprite
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/JetPack Girl.sprite
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/Jump-flip Monster.sprite
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/Jumping Jack.sprite
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/Painting Unicorn.sprite
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/dragon1-a.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/dragon1-b.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/dragon2.gif
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/fairy.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/fantasy1-a.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/fantasy1-b.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/fantasy10.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/fantasy11.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/fantasy12.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/fantasy13.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/fantasy14.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/fantasy2.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/fantasy3.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/fantasy4.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/fantasy5.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/fantasy6.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/fantasy7.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/fantasy8.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/fantasy9.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/ghost1.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/ghost2-a.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/ghost2-b.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/ghoul1-a.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/ghoul1-b.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/gobo1.gif
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/gobo2.gif
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/gobo3.gif
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/knight1.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/monkeyking.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/monster1-a.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/monster1-b.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/robot1.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/robot2.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/robot3.gif
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/scratchthumbs.db
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/skull1.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/snowman1.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/snowman2.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/sun.gif
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/troll1.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/unicorn1.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/wild1.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/witch1.png
+share/${OST_HOME}/scratch/Media/Costumes/Fantasy/wizard1.png
+share/${OST_HOME}/scratch/Media/Costumes/Letters/
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/0.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/1.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/2.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/3.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/4.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/5.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/6.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/7.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/8.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/9.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/a.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/b.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/c.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/d.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/e.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/f.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/g.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/h.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/i.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/j.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/k.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/l.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/m.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/n.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/o.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/p.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/q.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/r.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/s.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/scratchthumbs.db
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/t.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/u.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/v.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/w.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/x.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/y.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/auto/z.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/0.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/1.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/2.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/3.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/4.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/5.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/6.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/7.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/8.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/9.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/a.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/b.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/c.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/d.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/e.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/f.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/g.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/h.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/i.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/j.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/k.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/l.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/m.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/n.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/o.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/p.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/q.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/r.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/s.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/scratchthumbs.db
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/t.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/u.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/v.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/w.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/x.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/y.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/bubbles/z.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/0.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/1.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/2.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/3.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/4.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/5.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/6.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/7.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/8.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/9.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/a.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/b.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/c.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/d.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/e.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/f.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/g.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/h.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/i.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/j.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/k.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/l.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/m.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/n.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/o.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/p.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/q.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/r.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/s.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/scratchthumbs.db
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/t.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/u.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/v.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/w.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/x.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/y.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/circles/z.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/0.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/1.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/2.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/3.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/4.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/5.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/6.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/7.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/8.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/9.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/a.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/b.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/c.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/d.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/e.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/f.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/g.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/h.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/i.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/j.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/k.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/l.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/m.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/n.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/o.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/p.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/q.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/r.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/s.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/scratchthumbs.db
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/t.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/u.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/v.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/w.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/x.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/y.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/curly/z.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/0.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/1.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/2.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/3.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/4.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/5.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/6.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/7.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/8.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/9.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/a.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/b.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/c.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/d.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/e.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/f.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/g.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/h.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/i.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/j.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/k.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/l.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/m.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/n.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/o.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/p.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/q.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/r.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/s.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/scratchthumbs.db
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/t.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/u.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/v.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/w.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/x.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/y.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/digital/z.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/0.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/1.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/2.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/3.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/4.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/5.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/6.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/7.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/8.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/9.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/a.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/b.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/c.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/d.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/e.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/f.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/g.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/h.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/i.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/j.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/k.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/l.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/m.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/n.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/o.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/p.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/q.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/r.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/s.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/scratchthumbs.db
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/t.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/u.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/v.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/w.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/x.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/y.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/funky/z.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/0.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/1.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/2.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/3.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/4.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/5.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/6.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/7.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/8.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/9.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/a.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/b.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/c.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/d.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/e.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/f.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/g.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/h.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/i.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/j.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/k.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/l.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/m.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/n.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/o.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/p.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/q.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/r.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/s.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/scratchthumbs.db
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/t.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/u.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/v.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/w.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/x.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/y.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/keys/z.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/a.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/b.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/c.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/d.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/e.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/f.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/g.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/h.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/i.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/j.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/k.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/l.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/m.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/n.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/o.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/p.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/q.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/r.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/s.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/scratchthumbs.db
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/t.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/u.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/v.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/w.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/x.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/y.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/outline/z.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/0.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/1.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/2.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/3.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/4.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/5.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/6.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/7.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/8.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/9.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/a.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/b.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/c.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/d.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/e.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/f.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/g.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/h.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/i.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/j.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/k.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/l.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/m.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/n.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/o.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/p.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/q.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/r.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/s.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/scratchthumbs.db
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/t.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/u.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/v.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/w.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/x.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/y.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/scratch/z.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/0.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/1.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/2.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/3.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/4.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/5.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/6.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/7.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/8.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/9.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/a.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/b.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/c.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/d.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/e.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/f.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/g.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/h.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/i.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/j.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/k.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/l.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/m.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/n.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/o.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/p.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/q.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/r.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/s.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/scratchthumbs.db
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/t.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/u.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/v.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/w.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/x.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/y.gif
+share/${OST_HOME}/scratch/Media/Costumes/Letters/stone/z.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/
+share/${OST_HOME}/scratch/Media/Costumes/People/Dancer.sprite
+share/${OST_HOME}/scratch/Media/Costumes/People/Gymnast.sprite
+share/${OST_HOME}/scratch/Media/Costumes/People/Talking Person.sprite
+share/${OST_HOME}/scratch/Media/Costumes/People/Walking Dude.sprite
+share/${OST_HOME}/scratch/Media/Costumes/People/Whirling Girl.sprite
+share/${OST_HOME}/scratch/Media/Costumes/People/amon1.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/anjuli-1.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/anjuli-2.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/anjuli-3.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/anjuli-4.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/anjuli-5.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/anna-1.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/anna-2.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/anna-3.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/baby.png
+share/${OST_HOME}/scratch/Media/Costumes/People/ballerina-a.png
+share/${OST_HOME}/scratch/Media/Costumes/People/ballerina-b.png
+share/${OST_HOME}/scratch/Media/Costumes/People/ballerina-c.png
+share/${OST_HOME}/scratch/Media/Costumes/People/ballerina-d.png
+share/${OST_HOME}/scratch/Media/Costumes/People/boy1-standing.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/boy1-walking.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/boy2.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/boy3.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/boy4-laughing.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/boy4-shrugging.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/boy4-walking-a.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/boy4-walking-b.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/boy4-walking-c.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/boy4-walking-d.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/boy4-walking-e.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/boycurly.png
+share/${OST_HOME}/scratch/Media/Costumes/People/boyshorts.png
+share/${OST_HOME}/scratch/Media/Costumes/People/breakdancer-1.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/breakdancer-2.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/breakdancer-3.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/breakdancer-4.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/breakdancer1.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/breakdancer2.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/breakdancer3.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/calvrett-jumping.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/calvrett-thinking.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/calvrett.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/cassy-chillin.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/cassy-dancing-1.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/cassy-dancing-2.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/cassy-dancing-3.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/cassy-dancing-4.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/cassy-jumping-1.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/cassy-jumping-2.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/cassy-phone-1.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/cassy-sitting-1.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/cassy-standing-1.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/chamak1.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/chamak2.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/dan1.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/dan2.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/dan3.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/dan4.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/dan5.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/dan6.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/diver1.png
+share/${OST_HOME}/scratch/Media/Costumes/People/diver2.png
+share/${OST_HOME}/scratch/Media/Costumes/People/ed.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/football-run.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/football-stand.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/girl1-standing.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/girl1-walking.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/girl2-shouting.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/girl2-standing.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/girl3-basketball.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/girl3-running.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/girl3-standing.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/girl4-sitting.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/girl4-standing.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/girl5.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/jay.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/jodi1.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/jodi2.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/lee-fan.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/mako-laughing.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/mako-screaming.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/mako-stop.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/marissa-crouching.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/marissa-sitting.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/marissa.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/nathan.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/nina1.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/paul1.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/prince1.png
+share/${OST_HOME}/scratch/Media/Costumes/People/prince2.png
+share/${OST_HOME}/scratch/Media/Costumes/People/princess1.png
+share/${OST_HOME}/scratch/Media/Costumes/People/referee1.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/referee2.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/ribbon-dancer.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/roundman.png
+share/${OST_HOME}/scratch/Media/Costumes/People/royalperson.png
+share/${OST_HOME}/scratch/Media/Costumes/People/sam.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/scratchthumbs.db
+share/${OST_HOME}/scratch/Media/Costumes/People/singer1.png
+share/${OST_HOME}/scratch/Media/Costumes/People/squaregirl.png
+share/${OST_HOME}/scratch/Media/Costumes/People/squareguy.png
+share/${OST_HOME}/scratch/Media/Costumes/People/thai-dancer.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/thai-dancer2.gif
+share/${OST_HOME}/scratch/Media/Costumes/People/womanbun.png
+share/${OST_HOME}/scratch/Media/Costumes/People/womanwaving.png
+share/${OST_HOME}/scratch/Media/Costumes/Things/
+share/${OST_HOME}/scratch/Media/Costumes/Things/Bouncy Ball.sprite
+share/${OST_HOME}/scratch/Media/Costumes/Things/Click-N-Drag Basketball.sprite
+share/${OST_HOME}/scratch/Media/Costumes/Things/Clickable Drum.sprite
+share/${OST_HOME}/scratch/Media/Costumes/Things/Clock-hand.sprite
+share/${OST_HOME}/scratch/Media/Costumes/Things/Disappearing Bananas.sprite
+share/${OST_HOME}/scratch/Media/Costumes/Things/Draggable.sprite
+share/${OST_HOME}/scratch/Media/Costumes/Things/Drawing Pencil.sprite
+share/${OST_HOME}/scratch/Media/Costumes/Things/Following Arrow.sprite
+share/${OST_HOME}/scratch/Media/Costumes/Things/Friction Marble.sprite
+share/${OST_HOME}/scratch/Media/Costumes/Things/Gravity Marble.sprite
+share/${OST_HOME}/scratch/Media/Costumes/Things/Touch-me Trampoline.sprite
+share/${OST_HOME}/scratch/Media/Costumes/Things/bananas1.png
+share/${OST_HOME}/scratch/Media/Costumes/Things/baseball1.png
+share/${OST_HOME}/scratch/Media/Costumes/Things/basketball.png
+share/${OST_HOME}/scratch/Media/Costumes/Things/beachball1.png
+share/${OST_HOME}/scratch/Media/Costumes/Things/button.gif
+share/${OST_HOME}/scratch/Media/Costumes/Things/buttonPressed.gif
+share/${OST_HOME}/scratch/Media/Costumes/Things/cheesy-puffs.gif
+share/${OST_HOME}/scratch/Media/Costumes/Things/drum1.gif
+share/${OST_HOME}/scratch/Media/Costumes/Things/drum2.gif
+share/${OST_HOME}/scratch/Media/Costumes/Things/fire-hydrant.gif
+share/${OST_HOME}/scratch/Media/Costumes/Things/flower-vase.gif
+share/${OST_HOME}/scratch/Media/Costumes/Things/fortune_cookie.gif
+share/${OST_HOME}/scratch/Media/Costumes/Things/fruit_platter.gif
+share/${OST_HOME}/scratch/Media/Costumes/Things/hair1.gif
+share/${OST_HOME}/scratch/Media/Costumes/Things/hair2.gif
+share/${OST_HOME}/scratch/Media/Costumes/Things/key1.png
+share/${OST_HOME}/scratch/Media/Costumes/Things/lamp.gif
+share/${OST_HOME}/scratch/Media/Costumes/Things/laptop.png
+share/${OST_HOME}/scratch/Media/Costumes/Things/lego.gif
+share/${OST_HOME}/scratch/Media/Costumes/Things/manhole.png
+share/${OST_HOME}/scratch/Media/Costumes/Things/marble-building.gif
+share/${OST_HOME}/scratch/Media/Costumes/Things/mic.png
+share/${OST_HOME}/scratch/Media/Costumes/Things/palmtree.gif
+share/${OST_HOME}/scratch/Media/Costumes/Things/partyhat1.png
+share/${OST_HOME}/scratch/Media/Costumes/Things/partyhat2.png
+share/${OST_HOME}/scratch/Media/Costumes/Things/partyhat3.png
+share/${OST_HOME}/scratch/Media/Costumes/Things/rock.png
+share/${OST_HOME}/scratch/Media/Costumes/Things/scoreboard.gif
+share/${OST_HOME}/scratch/Media/Costumes/Things/scratchthumbs.db
+share/${OST_HOME}/scratch/Media/Costumes/Things/scream-O-meter.sprite
+share/${OST_HOME}/scratch/Media/Costumes/Things/soccer1.png
+share/${OST_HOME}/scratch/Media/Costumes/Things/sunglassF1.png
+share/${OST_HOME}/scratch/Media/Costumes/Things/sunglassF2.png
+share/${OST_HOME}/scratch/Media/Costumes/Things/sunglassF3.png
+share/${OST_HOME}/scratch/Media/Costumes/Things/sunglassF4.png
+share/${OST_HOME}/scratch/Media/Costumes/Things/tennisball.png
+share/${OST_HOME}/scratch/Media/Costumes/Things/trampoline.gif
+share/${OST_HOME}/scratch/Media/Costumes/Things/umbrella.gif
+share/${OST_HOME}/scratch/Media/Costumes/Things/wizardhat.png
+share/${OST_HOME}/scratch/Media/Costumes/Transportation/
+share/${OST_HOME}/scratch/Media/Costumes/Transportation/Back-and-forth bus.sprite
+share/${OST_HOME}/scratch/Media/Costumes/Transportation/Perspective Ship.sprite
+share/${OST_HOME}/scratch/Media/Costumes/Transportation/Rotating Car.sprite
+share/${OST_HOME}/scratch/Media/Costumes/Transportation/airplane.gif
+share/${OST_HOME}/scratch/Media/Costumes/Transportation/airplane1.png
+share/${OST_HOME}/scratch/Media/Costumes/Transportation/bike.gif
+share/${OST_HOME}/scratch/Media/Costumes/Transportation/bus.gif
+share/${OST_HOME}/scratch/Media/Costumes/Transportation/car-blue.gif
+share/${OST_HOME}/scratch/Media/Costumes/Transportation/car-bug.gif
+share/${OST_HOME}/scratch/Media/Costumes/Transportation/car-cow.gif
+share/${OST_HOME}/scratch/Media/Costumes/Transportation/car1.png
+share/${OST_HOME}/scratch/Media/Costumes/Transportation/car2.png
+share/${OST_HOME}/scratch/Media/Costumes/Transportation/convertible1.gif
+share/${OST_HOME}/scratch/Media/Costumes/Transportation/convertible2.gif
+share/${OST_HOME}/scratch/Media/Costumes/Transportation/convertible3.gif
+share/${OST_HOME}/scratch/Media/Costumes/Transportation/helicopter1.png
+share/${OST_HOME}/scratch/Media/Costumes/Transportation/magiccarpet.png
+share/${OST_HOME}/scratch/Media/Costumes/Transportation/sail-boat.gif
+share/${OST_HOME}/scratch/Media/Costumes/Transportation/scratchthumbs.db
+share/${OST_HOME}/scratch/Media/Costumes/Transportation/street-cleaner-mit.png
+share/${OST_HOME}/scratch/Media/Costumes/Transportation/train.gif
+share/${OST_HOME}/scratch/Media/Costumes/Transportation/tug-boat.gif
+share/${OST_HOME}/scratch/Media/Costumes/Transportation/yacht.gif
+share/${OST_HOME}/scratch/Media/Sounds/
+share/${OST_HOME}/scratch/Media/Sounds/Animal/
+share/${OST_HOME}/scratch/Media/Sounds/Animal/Bird.wav
+share/${OST_HOME}/scratch/Media/Sounds/Animal/Cat.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Animal/Cricket.wav
+share/${OST_HOME}/scratch/Media/Sounds/Animal/Crickets.wav
+share/${OST_HOME}/scratch/Media/Sounds/Animal/Dog1.wav
+share/${OST_HOME}/scratch/Media/Sounds/Animal/Dog2.wav
+share/${OST_HOME}/scratch/Media/Sounds/Animal/Duck.wav
+share/${OST_HOME}/scratch/Media/Sounds/Animal/Goose.wav
+share/${OST_HOME}/scratch/Media/Sounds/Animal/Horse.wav
+share/${OST_HOME}/scratch/Media/Sounds/Animal/HorseGallop.wav
+share/${OST_HOME}/scratch/Media/Sounds/Animal/Kitten.wav
+share/${OST_HOME}/scratch/Media/Sounds/Animal/Meow.wav
+share/${OST_HOME}/scratch/Media/Sounds/Animal/Owl.wav
+share/${OST_HOME}/scratch/Media/Sounds/Animal/Rooster.wav
+share/${OST_HOME}/scratch/Media/Sounds/Animal/SeaLion.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Animal/WolfHowl.wav
+share/${OST_HOME}/scratch/Media/Sounds/Effects/
+share/${OST_HOME}/scratch/Media/Sounds/Effects/BalloonScratch.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Effects/BellToll.wav
+share/${OST_HOME}/scratch/Media/Sounds/Effects/Bubbles.wav
+share/${OST_HOME}/scratch/Media/Sounds/Effects/CarPassing.wav
+share/${OST_HOME}/scratch/Media/Sounds/Effects/DoorClose.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Effects/DoorCreak.wav
+share/${OST_HOME}/scratch/Media/Sounds/Effects/MotorcyclePassing.wav
+share/${OST_HOME}/scratch/Media/Sounds/Effects/Plunge.wav
+share/${OST_HOME}/scratch/Media/Sounds/Effects/Pop.wav
+share/${OST_HOME}/scratch/Media/Sounds/Effects/Rattle.wav
+share/${OST_HOME}/scratch/Media/Sounds/Effects/Ripples.wav
+share/${OST_HOME}/scratch/Media/Sounds/Effects/SewingMachine.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Effects/Typing.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Effects/WaterDrop.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Effects/WaterRunning.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Electronic/
+share/${OST_HOME}/scratch/Media/Sounds/Electronic/AlienCreak1.wav
+share/${OST_HOME}/scratch/Media/Sounds/Electronic/AlienCreak2.wav
+share/${OST_HOME}/scratch/Media/Sounds/Electronic/ComputerBeeps1.wav
+share/${OST_HOME}/scratch/Media/Sounds/Electronic/ComputerBeeps2.wav
+share/${OST_HOME}/scratch/Media/Sounds/Electronic/DirtyWhir.wav
+share/${OST_HOME}/scratch/Media/Sounds/Electronic/Fairydust.wav
+share/${OST_HOME}/scratch/Media/Sounds/Electronic/Laser1.wav
+share/${OST_HOME}/scratch/Media/Sounds/Electronic/Laser2.wav
+share/${OST_HOME}/scratch/Media/Sounds/Electronic/Peculiar.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Electronic/Screech.wav
+share/${OST_HOME}/scratch/Media/Sounds/Electronic/SpaceRipple.wav
+share/${OST_HOME}/scratch/Media/Sounds/Electronic/Spiral.wav
+share/${OST_HOME}/scratch/Media/Sounds/Electronic/Whoop.wav
+share/${OST_HOME}/scratch/Media/Sounds/Electronic/Zoop.wav
+share/${OST_HOME}/scratch/Media/Sounds/Human/
+share/${OST_HOME}/scratch/Media/Sounds/Human/BabyCry.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Human/Cough-female.wav
+share/${OST_HOME}/scratch/Media/Sounds/Human/Cough-male.wav
+share/${OST_HOME}/scratch/Media/Sounds/Human/FingerSnap.wav
+share/${OST_HOME}/scratch/Media/Sounds/Human/Footsteps-1.wav
+share/${OST_HOME}/scratch/Media/Sounds/Human/Footsteps-2.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Human/Laugh-female.wav
+share/${OST_HOME}/scratch/Media/Sounds/Human/Laugh-male1.wav
+share/${OST_HOME}/scratch/Media/Sounds/Human/Laugh-male2.wav
+share/${OST_HOME}/scratch/Media/Sounds/Human/Laugh-male3.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Human/PartyNoise.wav
+share/${OST_HOME}/scratch/Media/Sounds/Human/Scream-female.wav
+share/${OST_HOME}/scratch/Media/Sounds/Human/Scream-male1.wav
+share/${OST_HOME}/scratch/Media/Sounds/Human/Scream-male2.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Human/Slurp.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Human/Sneeze-female.wav
+share/${OST_HOME}/scratch/Media/Sounds/Human/Sneeze-male.wav
+share/${OST_HOME}/scratch/Media/Sounds/Instruments/
+share/${OST_HOME}/scratch/Media/Sounds/Instruments/AfroString.wav
+share/${OST_HOME}/scratch/Media/Sounds/Instruments/Chord.wav
+share/${OST_HOME}/scratch/Media/Sounds/Instruments/Dijjeridoo.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Instruments/GuitarStrum.wav
+share/${OST_HOME}/scratch/Media/Sounds/Instruments/SpookyString.wav
+share/${OST_HOME}/scratch/Media/Sounds/Instruments/StringAccent.wav
+share/${OST_HOME}/scratch/Media/Sounds/Instruments/StringPluck.wav
+share/${OST_HOME}/scratch/Media/Sounds/Instruments/Suspense.wav
+share/${OST_HOME}/scratch/Media/Sounds/Instruments/Tambura.wav
+share/${OST_HOME}/scratch/Media/Sounds/Instruments/Trumpet1.wav
+share/${OST_HOME}/scratch/Media/Sounds/Instruments/Trumpet2.wav
+share/${OST_HOME}/scratch/Media/Sounds/Music Loops/
+share/${OST_HOME}/scratch/Media/Sounds/Music Loops/Cave.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Music Loops/DripDrop.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Music Loops/Drum.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Music Loops/DrumMachine.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Music Loops/DrumSet1.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Music Loops/DrumSet2.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Music Loops/Eggs.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Music Loops/Garden.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Music Loops/GuitarChords1.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Music Loops/GuitarChords2.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Music Loops/HipHop.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Music Loops/HumanBeatbox1.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Music Loops/HumanBeatbox2.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Music Loops/Jungle.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Music Loops/Medieval1.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Music Loops/Medieval2.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Music Loops/Techno.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Music Loops/Techno2.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Music Loops/Triumph.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Music Loops/Xylo1.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Music Loops/Xylo2.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Music Loops/Xylo3.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Music Loops/xylo4.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Percussion/
+share/${OST_HOME}/scratch/Media/Sounds/Percussion/CymbalCrash.wav
+share/${OST_HOME}/scratch/Media/Sounds/Percussion/DrumBuzz.wav
+share/${OST_HOME}/scratch/Media/Sounds/Percussion/Gong.wav
+share/${OST_HOME}/scratch/Media/Sounds/Percussion/HandClap.wav
+share/${OST_HOME}/scratch/Media/Sounds/Percussion/RideCymbal.wav
+share/${OST_HOME}/scratch/Media/Sounds/Percussion/Shaker.wav
+share/${OST_HOME}/scratch/Media/Sounds/Vocals/
+share/${OST_HOME}/scratch/Media/Sounds/Vocals/BeatBox1.wav
+share/${OST_HOME}/scratch/Media/Sounds/Vocals/BeatBox2.wav
+share/${OST_HOME}/scratch/Media/Sounds/Vocals/Come-and-play.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Vocals/Doy-doy-doy.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Vocals/Got-inspiration.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Vocals/Hey-yay-hey.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Vocals/Join-us.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Vocals/Oooo-badada.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Vocals/Sing-me-a-song.mp3
+share/${OST_HOME}/scratch/Media/Sounds/Vocals/Singer1.wav
+share/${OST_HOME}/scratch/Media/Sounds/Vocals/Singer2.wav
+share/${OST_HOME}/scratch/Media/Sounds/Vocals/Ya.wav
+share/${OST_HOME}/scratch/NuScratch${OST_IMG_VER}.image
+share/${OST_HOME}/scratch/Projects/
+share/${OST_HOME}/scratch/Projects/Animation/
+share/${OST_HOME}/scratch/Projects/Animation/1 Playground.sb
+share/${OST_HOME}/scratch/Projects/Animation/2 Ideas.sb
+share/${OST_HOME}/scratch/Projects/Animation/3 Trampoline.sb
+share/${OST_HOME}/scratch/Projects/Animation/4 FunWithAnimation.sb
+share/${OST_HOME}/scratch/Projects/Animation/5 EweAndMe.sb
+share/${OST_HOME}/scratch/Projects/Animation/6 Aquarium.sb
+share/${OST_HOME}/scratch/Projects/Animation/7 Jellyfish.sb
+share/${OST_HOME}/scratch/Projects/Animation/8 DayDream.sb
+share/${OST_HOME}/scratch/Projects/Demos/
+share/${OST_HOME}/scratch/Projects/Demos/Asteroid Blaster.sb
+share/${OST_HOME}/scratch/Projects/Demos/Pacman for Scratch.sb
+share/${OST_HOME}/scratch/Projects/Demos/Scratch Invaders.sb
+share/${OST_HOME}/scratch/Projects/Games/
+share/${OST_HOME}/scratch/Projects/Games/1 GuessingGame.sb
+share/${OST_HOME}/scratch/Projects/Games/2 PacMan.sb
+share/${OST_HOME}/scratch/Projects/Games/3 FishChomp.sb
+share/${OST_HOME}/scratch/Projects/Games/4 Pong.sb
+share/${OST_HOME}/scratch/Projects/Games/5 MarbleRacer.sb
+share/${OST_HOME}/scratch/Projects/Games/6 FruitcraftRPG.sb
+share/${OST_HOME}/scratch/Projects/Games/7 BugOnAPlate.sb
+share/${OST_HOME}/scratch/Projects/Games/8 ScrollingDemo.sb
+share/${OST_HOME}/scratch/Projects/Greetings/
+share/${OST_HOME}/scratch/Projects/Greetings/1 HelloInManyLanguages.sb
+share/${OST_HOME}/scratch/Projects/Greetings/2 SaySorryToYourFriend.sb
+share/${OST_HOME}/scratch/Projects/Greetings/3 Slideshow.sb
+share/${OST_HOME}/scratch/Projects/Greetings/4 Celebration.sb
+share/${OST_HOME}/scratch/Projects/Greetings/5 ForWodunne.sb
+share/${OST_HOME}/scratch/Projects/Greetings/6 Christmas.sb
+share/${OST_HOME}/scratch/Projects/Greetings/7 Birthday.sb
+share/${OST_HOME}/scratch/Projects/Greetings/8 HappyBirthdayPooja.sb
+share/${OST_HOME}/scratch/Projects/Interactive Art/
+share/${OST_HOME}/scratch/Projects/Interactive Art/1 MonkeyDressUp.sb
+share/${OST_HOME}/scratch/Projects/Interactive Art/2 ExpressionCreator.sb
+share/${OST_HOME}/scratch/Projects/Interactive Art/3 PlayWithYourFace.sb
+share/${OST_HOME}/scratch/Projects/Interactive Art/4 Kaleidoscope.sb
+share/${OST_HOME}/scratch/Projects/Interactive Art/5 MouseRecorder.sb
+share/${OST_HOME}/scratch/Projects/Interactive Art/6 WHEEE.sb
+share/${OST_HOME}/scratch/Projects/Interactive Art/7 GardenSecret.sb
+share/${OST_HOME}/scratch/Projects/Interactive Art/8 ZenRockGarden.sb
+share/${OST_HOME}/scratch/Projects/Music and Dance/
+share/${OST_HOME}/scratch/Projects/Music and Dance/1 RobotDance.sb
+share/${OST_HOME}/scratch/Projects/Music and Dance/2 ChickenNoodleSoup.sb
+share/${OST_HOME}/scratch/Projects/Music and Dance/3 MelodyList.sb
+share/${OST_HOME}/scratch/Projects/Music and Dance/4 TwinkleTwinkle.sb
+share/${OST_HOME}/scratch/Projects/Music and Dance/5 DanceDressUp.sb
+share/${OST_HOME}/scratch/Projects/Music and Dance/6 BreakDance.sb
+share/${OST_HOME}/scratch/Projects/Music and Dance/7 CanYouDance.sb
+share/${OST_HOME}/scratch/Projects/Music and Dance/8 OceanMusicBox.sb
+share/${OST_HOME}/scratch/Projects/Music and Dance/9 PianoMachine.sb
+share/${OST_HOME}/scratch/Projects/Names/
+share/${OST_HOME}/scratch/Projects/Names/1 BouncingInitials.sb
+share/${OST_HOME}/scratch/Projects/Names/2 Tamika.sb
+share/${OST_HOME}/scratch/Projects/Names/3 NameSurprise.sb
+share/${OST_HOME}/scratch/Projects/Names/4 NatalieDucks.sb
+share/${OST_HOME}/scratch/Projects/Names/5 WORDO.sb
+share/${OST_HOME}/scratch/Projects/Names/6 ForMyLittleBrother.sb
+share/${OST_HOME}/scratch/Projects/Names/7 Tamara.sb
+share/${OST_HOME}/scratch/Projects/Sensors and Motors/
+share/${OST_HOME}/scratch/Projects/Sensors and Motors/Sensorboard 1 Sunrise.sb
+share/${OST_HOME}/scratch/Projects/Sensors and Motors/Sensorboard 2 Everything.sb
+share/${OST_HOME}/scratch/Projects/Sensors and Motors/Sensorboard 3 Trombone.sb
+share/${OST_HOME}/scratch/Projects/Sensors and Motors/Sensorboard 4 FruitOPhone.sb
+share/${OST_HOME}/scratch/Projects/Sensors and Motors/Sensorboard 5 Squish.sb
+share/${OST_HOME}/scratch/Projects/Sensors and Motors/WeDo 1 MagicWand.sb
+share/${OST_HOME}/scratch/Projects/Sensors and Motors/WeDo 2 Puppet.sb
+share/${OST_HOME}/scratch/Projects/Sensors and Motors/WeDo 3 Castle.sb
+share/${OST_HOME}/scratch/Projects/Sensors and Motors/WeDo 4 Labyrinth.sb
+share/${OST_HOME}/scratch/Projects/Sensors and Motors/WeDo 5 FriendlyGator.sb
+share/${OST_HOME}/scratch/Projects/Sensors and Motors/gpio-DS18B20temperaturegraph.sb
+share/${OST_HOME}/scratch/Projects/Sensors and Motors/gpio-ExplorerHAT.sb
+share/${OST_HOME}/scratch/Projects/Sensors and Motors/gpio-PiFace.sb
+share/${OST_HOME}/scratch/Projects/Sensors and Motors/gpio-PiGlow.sb
+share/${OST_HOME}/scratch/Projects/Sensors and Motors/gpio-SenseHAT.sb
+share/${OST_HOME}/scratch/Projects/Sensors and Motors/gpio-citytemperaturegraph.sb
+share/${OST_HOME}/scratch/Projects/Sensors and Motors/gpio-cputemperaturegraph.sb
+share/${OST_HOME}/scratch/Projects/Sensors and Motors/gpio-demo.sb
+share/${OST_HOME}/scratch/Projects/Sensors and Motors/gpio-pibrella.sb
+share/${OST_HOME}/scratch/Projects/Sensors and Motors/gpio-servoDemo.sb
+share/${OST_HOME}/scratch/Projects/Sensors and Motors/gpio-ultrasonicDemo.sb
+share/${OST_HOME}/scratch/Projects/Sensors and Motors/gpio-ultrasonicIntruderAlarm.sb
+share/${OST_HOME}/scratch/Projects/Simulations/
+share/${OST_HOME}/scratch/Projects/Simulations/1 Spinner.sb
+share/${OST_HOME}/scratch/Projects/Simulations/2 GravityBlocks.sb
+share/${OST_HOME}/scratch/Projects/Simulations/3 SoundGraph.sb
+share/${OST_HOME}/scratch/Projects/Simulations/4 MyLittleTown.sb
+share/${OST_HOME}/scratch/Projects/Simulations/5 SimpleCircuit.sb
+share/${OST_HOME}/scratch/Projects/Simulations/6 WeatherSimulation.sb
+share/${OST_HOME}/scratch/Projects/Simulations/7 VirtualDog.sb
+share/${OST_HOME}/scratch/Projects/Simulations/8 BouncingMusicBalls.sb
+share/${OST_HOME}/scratch/Projects/Speak Up/
+share/${OST_HOME}/scratch/Projects/Speak Up/1 SmokingKills.sb
+share/${OST_HOME}/scratch/Projects/Speak Up/2 SaveTheBats.sb
+share/${OST_HOME}/scratch/Projects/Speak Up/3 AgainstSpammers.sb
+share/${OST_HOME}/scratch/Projects/Speak Up/4 OneDay.sb
+share/${OST_HOME}/scratch/Projects/Speak Up/5 E-Cocat'sEarthTips.sb
+share/${OST_HOME}/scratch/Projects/Speak Up/6 GlobalWarming.sb
+share/${OST_HOME}/scratch/Projects/Stories/
+share/${OST_HOME}/scratch/Projects/Stories/1 Joke.sb
+share/${OST_HOME}/scratch/Projects/Stories/2 MadLibs.sb
+share/${OST_HOME}/scratch/Projects/Stories/3 BowlOfMemories.sb
+share/${OST_HOME}/scratch/Projects/Stories/4 CreationStory.sb
+share/${OST_HOME}/scratch/Projects/Stories/5 SNN#1.sb
+share/${OST_HOME}/scratch/Projects/Stories/6 WodunnesWorld.sb
+share/${OST_HOME}/scratch/Projects/Stories/7 BeeStory.sb
+share/${OST_HOME}/scratch/locale/
+share/${OST_HOME}/scratch/locale/Scratch.pot
+share/${OST_HOME}/scratch/locale/ar.po
+share/${OST_HOME}/scratch/locale/bg.po
+share/${OST_HOME}/scratch/locale/ca.po
+share/${OST_HOME}/scratch/locale/cs.po
+share/${OST_HOME}/scratch/locale/da.po
+share/${OST_HOME}/scratch/locale/de.po
+share/${OST_HOME}/scratch/locale/el.po
+share/${OST_HOME}/scratch/locale/es.po
+share/${OST_HOME}/scratch/locale/et.po
+share/${OST_HOME}/scratch/locale/eu.po
+share/${OST_HOME}/scratch/locale/fa.po
+share/${OST_HOME}/scratch/locale/fi.po
+share/${OST_HOME}/scratch/locale/fr.po
+share/${OST_HOME}/scratch/locale/fr_CA.po
+share/${OST_HOME}/scratch/locale/gl.po
+share/${OST_HOME}/scratch/locale/he.po
+share/${OST_HOME}/scratch/locale/hr.po
+share/${OST_HOME}/scratch/locale/ht.po
+share/${OST_HOME}/scratch/locale/hu.po
+share/${OST_HOME}/scratch/locale/id.po
+share/${OST_HOME}/scratch/locale/is.po
+share/${OST_HOME}/scratch/locale/it.po
+share/${OST_HOME}/scratch/locale/ja.po
+share/${OST_HOME}/scratch/locale/ja.po.old
+share/${OST_HOME}/scratch/locale/ja_HIRA.po
+share/${OST_HOME}/scratch/locale/ja_HIRA.po.old
+share/${OST_HOME}/scratch/locale/kn.po
+share/${OST_HOME}/scratch/locale/ko.po
+share/${OST_HOME}/scratch/locale/lt.po
+share/${OST_HOME}/scratch/locale/mk.po
+share/${OST_HOME}/scratch/locale/mn.po
+share/${OST_HOME}/scratch/locale/mr.po
+share/${OST_HOME}/scratch/locale/ms.po
+share/${OST_HOME}/scratch/locale/ne.po
+share/${OST_HOME}/scratch/locale/nl.po
+share/${OST_HOME}/scratch/locale/no.po
+share/${OST_HOME}/scratch/locale/pl.po
+share/${OST_HOME}/scratch/locale/pt.po
+share/${OST_HOME}/scratch/locale/pt_BR.po
+share/${OST_HOME}/scratch/locale/ro.po
+share/${OST_HOME}/scratch/locale/ru.po
+share/${OST_HOME}/scratch/locale/rw.po
+share/${OST_HOME}/scratch/locale/sk.po
+share/${OST_HOME}/scratch/locale/sl.po
+share/${OST_HOME}/scratch/locale/sv.po
+share/${OST_HOME}/scratch/locale/th.po
+share/${OST_HOME}/scratch/locale/tr.po
+share/${OST_HOME}/scratch/locale/uk.po
+share/${OST_HOME}/scratch/locale/vi.po
+share/${OST_HOME}/scratch/locale/zh_CN.po
+share/${OST_HOME}/scratch/locale/zh_TW.po

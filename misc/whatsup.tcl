@@ -58,20 +58,20 @@ set s ""
 set z squeak
 foreach k [dict keys $blob $z*] {
 	set b [dict get $blob $k]
-	append s [dict get $b title] ":" [llength [dict get $b dirs]] "  "
+	append s [dict get $b title] ":" [format %-2d [llength [dict get $b dirs]]] "  "
 }
 lappend O $s
 set s ""
 set z other
 foreach k [dict keys $blob $z*] {
 	set b [dict get $blob $k]
-	append s [dict get $b title] ":" [llength [dict get $b dirs]] "  "
+	append s " " [dict get $b title] ":" [format %-2d [llength [dict get $b dirs]]] "  "
 }
 lappend O $s
 
 namespace import ::tcl::mathop::+
 lappend O [format \
-	"Total VM:%d  Total Image:%d  Total Sources:%d" \
+	" Total VM:%-2d   Total Image:%-2d   Total Sources:%-2d" \
 	[+ [llength [dict get $blob squeak_vm      dirs]] [llength [dict get $blob other_vm      dirs]]] \
 	[+ [llength [dict get $blob squeak_image   dirs]] [llength [dict get $blob other_image   dirs]]] \
 	[+ [llength [dict get $blob squeak_sources dirs]] [llength [dict get $blob other_sources dirs]]] \

@@ -1,0 +1,16 @@
+$OpenBSD$
+
+Index: platforms/Cross/plugins/Mpeg3Plugin/libmpeg/audio/synthesizers.c
+--- platforms/Cross/plugins/Mpeg3Plugin/libmpeg/audio/synthesizers.c.orig
++++ platforms/Cross/plugins/Mpeg3Plugin/libmpeg/audio/synthesizers.c
+@@ -31,6 +31,10 @@
+ #include "mpeg3audio.h"
+ #include "tables.h"
+ 
++/* dct.c */
++extern int mpeg3audio_dct64(float *a, float *b, float *c);
++
++
+ #define WRITE_SAMPLE(samples, sum) \
+ { \
+ 	(*samples) = (sum); \

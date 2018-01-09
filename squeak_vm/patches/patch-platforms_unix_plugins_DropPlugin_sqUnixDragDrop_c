@@ -1,0 +1,22 @@
+$OpenBSD$
+
+Index: platforms/unix/plugins/DropPlugin/sqUnixDragDrop.c
+--- platforms/unix/plugins/DropPlugin/sqUnixDragDrop.c.orig
++++ platforms/unix/plugins/DropPlugin/sqUnixDragDrop.c
+@@ -44,6 +44,16 @@
+ #include <assert.h>
+ 
+ 
++extern sqInt classByteArray(void);
++extern usqIntptr_t fileRecordSize(void);
++
++/* vm? */
++extern sqInt instantiateClassindexableSize(sqInt, sqInt);
++
++/* unix/vm/sqUnixMain.c */
++extern void dndReceived(char *fileName);
++
++
+ extern struct VirtualMachine  *interpreterProxy;
+ extern int		       uxDropFileCount;
+ extern char		     **uxDropFileNames;

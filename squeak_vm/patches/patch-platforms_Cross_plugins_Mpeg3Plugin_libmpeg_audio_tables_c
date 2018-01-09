@@ -1,0 +1,17 @@
+$OpenBSD$
+
+Index: platforms/Cross/plugins/Mpeg3Plugin/libmpeg/audio/tables.c
+--- platforms/Cross/plugins/Mpeg3Plugin/libmpeg/audio/tables.c.orig
++++ platforms/Cross/plugins/Mpeg3Plugin/libmpeg/audio/tables.c
+@@ -33,6 +33,11 @@
+ 
+ #include <math.h>
+ 
++
++/* dct.c */
++extern int mpeg3audio_imdct_init(mpeg3audio_t *audio);
++
++
+ /* Bitrate indexes */
+ int mpeg3_tabsel_123[2][3][16] = {
+    { {0,32,64,96,128,160,192,224,256,288,320,352,384,416,448,},

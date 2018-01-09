@@ -20,10 +20,11 @@ WANTLIB +=		ssl util
 
 GH_ACCOUNT =		opensmalltalk
 GH_PROJECT =		opensmalltalk-vm
-GH_COMMIT =		ec439f18e994309de62f64c23b48e35920633f39
+GH_COMMIT =		0c7c4d395f5c78e015f1528bc70391fb4da8a7eb
 
 DIST_SUBDIR =		${OST_HOME}
-LIB_DEPENDS =		devel/libexecinfo
+BUILD_DEPENDS =		net/curl	# For st src building/fetching
+LIB_DEPENDS =		devel/libexecinfo converters/libiconv
 SEPARATE_BUILD =	Yes
 USE_GMAKE =		Yes
 LIBTOOL =		${WRKBUILD}/libtool
@@ -32,6 +33,11 @@ CONFIGURE_ARGS +=	ac_cv_socklen_t=yes --without-npsqueak LDFLAGS='${SQ_LDFLAGS}'
 CFLAGS =		-g -pipe -pthread -msse2 -DNDEBUG -DDEBUGVM=0 -D_GNU_SOURCE -I/usr/local/include
 #CFLAGS =		-g -pipe -pthread -msse2 -DNDEBUG -DDEBUGVM=0 -D_GNU_SOURCE -I/usr/local/include -DNO_VM_PROFILE=1
 #CFLAGS =		-g -pipe -pthread -msse2 -DDEBUGVM=1 -D_GNU_SOURCE -I/usr/local/include
+
+# So that autoconf finds iconv.h.
+# Others?
+CONFIGURE_ENV +=	CPPFLAGS=-I/usr/local/include
+
 COPTS ?=		-O2
 SQ_LDFLAGS =		-L/usr/local/lib -Wl,-z,now
 SQ_LIBS =		-lpthread -lexecinfo

@@ -1,0 +1,83 @@
+$OpenBSD$
+
+Index: platforms/Cross/plugins/Mpeg3Plugin/libmpeg/video/mpeg3videoprotos.h
+--- platforms/Cross/plugins/Mpeg3Plugin/libmpeg/video/mpeg3videoprotos.h.orig
++++ platforms/Cross/plugins/Mpeg3Plugin/libmpeg/video/mpeg3videoprotos.h
+@@ -4,4 +4,77 @@
+ void mpeg3video_idct_conversion(short* block);
+ unsigned int mpeg3slice_showbits(mpeg3_slice_buffer_t *slice_buffer, int bits);
+ 
++
++/* headers.c */
++int mpeg3video_get_header(mpeg3video_t *video, int dont_repeat);
++int mpeg3video_getgophdr(mpeg3video_t *video);
++int mpeg3video_getslicehdr(mpeg3_slice_t *slice, mpeg3video_t *video);
++
++/* getpicture.c */
++int  mpeg3video_get_cbp(mpeg3_slice_t *slice);
++int  mpeg3video_clearblock(mpeg3_slice_t *slice, int comp, int size);
++int  mpeg3video_getinterblock(mpeg3_slice_t *slice, mpeg3video_t *video, int comp);
++void mpeg3video_getintrablock(mpeg3_slice_t *slice, mpeg3video_t *video, int comp, int dc_dct_pred[]);
++void mpeg3video_getmpg2interblock(mpeg3_slice_t *slice, mpeg3video_t *video, int comp);
++void mpeg3video_getmpg2intrablock(mpeg3_slice_t *slice, mpeg3video_t *video, int comp, int dc_dct_pred[]);
++int  mpeg3video_getpicture(mpeg3video_t *video, int framenum);
++
++/* macroblocks.c */
++int mpeg3video_get_macroblock_address(mpeg3_slice_t *slice);
++int mpeg3video_macroblock_modes(mpeg3_slice_t *slice, mpeg3video_t *video, int *pmb_type, int *pstwtype,
++  int *pstwclass, int *pmotion_type, int *pmv_count, int *pmv_format, int *pdmv, int *pmvscale, int *pdct_type);
++
++/* motion.c */
++void mpeg3video_calc_dmv(mpeg3video_t *video, int DMV[][2], int *dmvector, int mvx, int mvy);
++void mpeg3video_motion_vector(mpeg3_slice_t *slice, mpeg3video_t *video, int *PMV, int *dmvector,
++  int h_r_size, int v_r_size, int dmv, int mvscale, int full_pel_vector);
++int mpeg3video_motion_vectors(mpeg3_slice_t *slice, mpeg3video_t *video, int PMV[2][2][2], int dmvector[2],
++  int mv_field_sel[2][2], int s, int mv_count, int mv_format, int h_r_size, int v_r_size, int dmv, int mvscale);
++
++/* mpeg3video.c */
++int mpeg3video_read_frame_backend(mpeg3video_t *video, int skip_bframes);
++
++/* output.c */
++int mpeg3video_display_second_field(mpeg3video_t *video);
++int mpeg3video_ditherframeFastRGB555(mpeg3video_t *video, unsigned char **src, unsigned char **output_rows);
++int mpeg3video_init_output(void);
++int mpeg3video_present_frame(mpeg3video_t *video);
++
++/* reconstruct.c */
++int mpeg3video_reconstruct(mpeg3video_t *video, int bx, int by, int mb_type, int motion_type, int PMV[2][2][2],
++  int mv_field_sel[2][2], int dmvector[2], int stwtype);
++
++/* seek.c */
++int mpeg3video_drop_frames(mpeg3video_t *video, long frames);
++int mpeg3video_match_refframes(mpeg3video_t *video);
++int mpeg3video_next_code(mpeg3_bits_t* stream, unsigned int code);
++int mpeg3video_prev_code(mpeg3_bits_t* stream, unsigned int code);
++int mpeg3video_seek(mpeg3video_t *video);
++unsigned int mpeg3bits_next_startcode(mpeg3_bits_t* stream);
++
++/* slice.c */
++int  mpeg3_delete_slice_buffer(mpeg3_slice_buffer_t *slice_buffer);
++int  mpeg3_delete_slice_decoder(mpeg3_slice_t *slice);
++int  mpeg3_expand_slice_buffer(mpeg3_slice_buffer_t *slice_buffer);
++int  mpeg3_new_slice_buffer(mpeg3_slice_buffer_t *slice_buffer);
++int  mpeg3_new_slice_decoder(void *video, mpeg3_slice_t *slice);
++void mpeg3_slice_loop(mpeg3_slice_t *slice);
++
++/* ../bitsream.c */
++int  mpeg3bits_byte_align(mpeg3_bits_t *stream);
++int  mpeg3bits_delete_stream(mpeg3_bits_t* stream);
++int  mpeg3bits_refill(mpeg3_bits_t* stream);
++int  mpeg3bits_seek_byte(mpeg3_bits_t* stream, long position);
++int  mpeg3bits_seek_end(mpeg3_bits_t* stream);
++int  mpeg3bits_seek_percentage(mpeg3_bits_t* stream, double percentage);
++int  mpeg3bits_seek_start(mpeg3_bits_t* stream);
++int  mpeg3bits_seek_time(mpeg3_bits_t* stream, double time_position);
++void mpeg3bits_start_forward(mpeg3_bits_t* stream);
++void mpeg3bits_start_reverse(mpeg3_bits_t* stream);
++
++/* ../mpeg3demux.c */
++int  mpeg3demux_eof(mpeg3_demuxer_t *demuxer);
++long mpeg3demuxer_total_bytes(mpeg3_demuxer_t *demuxer);
++
++
+ #endif

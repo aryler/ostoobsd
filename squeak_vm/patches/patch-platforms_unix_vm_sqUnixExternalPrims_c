@@ -3,16 +3,21 @@ $OpenBSD$
 Index: platforms/unix/vm/sqUnixExternalPrims.c
 --- platforms/unix/vm/sqUnixExternalPrims.c.orig
 +++ platforms/unix/vm/sqUnixExternalPrims.c
-@@ -61,11 +61,7 @@
-  
- #include <sys/param.h>
- #include <sys/stat.h>
--#ifdef __OpenBSD__
--#   include <errno.h>
--#else
--#   include <sys/errno.h>
--#endif
-+#include <errno.h>
- 
- /* get a value for RTLD_NOW, with increasing levels of desperation... */
- 
+@@ -147,7 +147,7 @@ tryLoadModule(char *in, char *name)
+     case '%':
+       if ('n' == *in || 'N' == *in) {	/* replace %n with name of plugin */
+ 	++in;
+-	strcpy(out, name);
++	strlcpy(out, name, sizeof(path));
+ 	out += strlen(name);
+ 	continue;
+       }
+@@ -341,7 +341,7 @@ ioLoadModule(char *pluginName)
+ 		while ((c= *in++)) {
+ 			if (c == '%' && ((*in == 'n') || (*in == 'N'))) {
+ 				++in;
+-				strcpy(out, pluginName);
++				strlcpy(out, pluginName, sizeof(path));
+ 				out+= strlen(pluginName);
+ 			}
+ 			else

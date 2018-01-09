@@ -1,0 +1,13 @@
+$OpenBSD$
+
+Index: platforms/Cross/plugins/Mpeg3Plugin/libmpeg/video/headers.c
+--- platforms/Cross/plugins/Mpeg3Plugin/libmpeg/video/headers.c.orig
++++ platforms/Cross/plugins/Mpeg3Plugin/libmpeg/video/headers.c
+@@ -32,6 +32,7 @@
+ #include "mpeg3demux.h"
+ #include "mpeg3private.h"
+ #include "mpeg3video.h"
++#include "mpeg3videoprotos.h"
+ 
+ #include <stdio.h>
+ #include <stdlib.h>

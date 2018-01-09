@@ -1,0 +1,15 @@
+$OpenBSD$
+
+Index: platforms/unix/vm/sqUnixVMProfile.c
+--- platforms/unix/vm/sqUnixVMProfile.c.orig
++++ platforms/unix/vm/sqUnixVMProfile.c
+@@ -51,7 +51,9 @@ ioClearProfile(void)
+ # endif
+ #endif
+ #ifdef __OpenBSD__
++#if 0
+ #include <sys/signal.h>
++#endif
+ #else
+ #include <sys/ucontext.h>
+ #endif

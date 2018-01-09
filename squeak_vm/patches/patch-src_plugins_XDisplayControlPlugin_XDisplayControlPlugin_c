@@ -1,0 +1,20 @@
+$OpenBSD$
+
+Index: src/plugins/XDisplayControlPlugin/XDisplayControlPlugin.c
+--- src/plugins/XDisplayControlPlugin/XDisplayControlPlugin.c.orig
++++ src/plugins/XDisplayControlPlugin/XDisplayControlPlugin.c
+@@ -22,6 +22,14 @@ static char __buildInfo[] = "XDisplayControlPlugin VMC
+ #include "sqVirtualMachine.h"	/*  The virtual machine proxy definition */
+ #include "sqPlatformSpecific.h"	/* Platform specific definitions */
+ 
++
++/* platforms/unix/vm-display-X11/sqUnixX11.c */
++extern int disconnectXDisplay(void);
++extern int forgetXDisplay(void);
++extern int openXDisplay(void);
++extern int synchronizeXDisplay(void);
++
++
+ #define true 1
+ #define false 0
+ #define null 0  /* using 'null' because nil is predefined in Think C */

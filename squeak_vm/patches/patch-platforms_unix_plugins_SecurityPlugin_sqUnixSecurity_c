@@ -1,0 +1,31 @@
+$OpenBSD$
+
+Index: platforms/unix/plugins/SecurityPlugin/sqUnixSecurity.c
+--- platforms/unix/plugins/SecurityPlugin/sqUnixSecurity.c.orig
++++ platforms/unix/plugins/SecurityPlugin/sqUnixSecurity.c
+@@ -185,14 +185,14 @@ sqInt ioInitSecurity(void)
+ 
+   /* establish the secure user directory */
+   strncpy(secureUserDirectory, imageName, imagePathLen);
+-  strcpy(secureUserDirectory + imagePathLen, "/secure");
++  strlcpy(secureUserDirectory + imagePathLen, "/secure", sizeof(secureUserDirectory));
+ 
+   /* establish untrusted user directory */
+   squeakUserDirectory= getenv("SQUEAK_USERDIR");
+   if (0 == squeakUserDirectory)
+     {
+       strncpy(untrustedUserDirectory, imageName, imagePathLen);
+-      strcpy(untrustedUserDirectory + imagePathLen, "/My Squeak");
++      strlcpy(untrustedUserDirectory + imagePathLen, "/My Squeak", sizeof(untrustedUserDirectory));
+     }
+   else
+     {
+@@ -200,7 +200,7 @@ sqInt ioInitSecurity(void)
+       /*  path is not allowed to end with "/" */
+       if ('/' == squeakUserDirectory[lastChar - 1])
+ 	squeakUserDirectory[lastChar - 1]= '\0';
+-      strcpy(untrustedUserDirectory, squeakUserDirectory);
++      strlcpy(untrustedUserDirectory, squeakUserDirectory, sizeof(untrustedUserDirectory));
+     }
+   untrustedUserDirectoryLen= strlen(untrustedUserDirectory);
+ 

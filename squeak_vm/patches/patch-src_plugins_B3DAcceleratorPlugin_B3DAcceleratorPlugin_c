@@ -1,0 +1,17 @@
+$OpenBSD$
+
+Index: src/plugins/B3DAcceleratorPlugin/B3DAcceleratorPlugin.c
+--- src/plugins/B3DAcceleratorPlugin/B3DAcceleratorPlugin.c.orig
++++ src/plugins/B3DAcceleratorPlugin/B3DAcceleratorPlugin.c
+@@ -21,6 +21,11 @@ static char __buildInfo[] = "B3DAcceleratorPlugin VMMa
+ #include "sqVirtualMachine.h"	/*  The virtual machine proxy definition */
+ #include "sqPlatformSpecific.h"	/* Platform specific definitions */
+ 
++
++/* platforms/Cross/plugins/B3DAcceleratorPlugin/sqOpenGLRenderer.c */
++extern int b3dLoadClientState(int handle, float *vtxData, int vtxSize, float *colorData, int colorSize, float *normalData, int normalSize, float *txData, int txSize);
++
++
+ #define true 1
+ #define false 0
+ #define null 0  /* using 'null' because nil is predefined in Think C */

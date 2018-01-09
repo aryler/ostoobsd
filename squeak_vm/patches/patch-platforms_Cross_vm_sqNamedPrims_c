@@ -1,0 +1,14 @@
+$OpenBSD$
+
+Index: platforms/Cross/vm/sqNamedPrims.c
+--- platforms/Cross/vm/sqNamedPrims.c.orig
++++ platforms/Cross/vm/sqNamedPrims.c
+@@ -61,7 +61,7 @@ addToModuleList(char *pluginName, void* handle, sqInt 
+ 	ModuleEntry *module;
+ 
+ 	module = (ModuleEntry*) calloc(1, sizeof(ModuleEntry) + strlen(pluginName));
+-	strcpy(module->name, pluginName);
++	strlcpy(module->name, pluginName, strlen(pluginName) + 1);
+ 	module->handle = handle;
+ 	module->ffiLoaded = ffiFlag;
+ 	module->next = firstModule;

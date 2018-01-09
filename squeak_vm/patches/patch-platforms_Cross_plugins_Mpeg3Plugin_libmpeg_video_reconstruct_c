@@ -1,0 +1,17 @@
+$OpenBSD$
+
+Index: platforms/Cross/plugins/Mpeg3Plugin/libmpeg/video/reconstruct.c
+--- platforms/Cross/plugins/Mpeg3Plugin/libmpeg/video/reconstruct.c.orig
++++ platforms/Cross/plugins/Mpeg3Plugin/libmpeg/video/reconstruct.c
+@@ -30,6 +30,11 @@
+ #include "mpeg3video.h"
+ #include <stdio.h>
+ 
++
++/* motion.c */
++extern void mpeg3video_calc_dmv(mpeg3video_t *video, int DMV[][2], int *dmvector, int mvx, int mvy);
++
++
+ #ifdef HAVE_MMX
+ 
+ #ifdef HAVE_3Dnow

@@ -1,0 +1,17 @@
+$OpenBSD$
+
+Index: platforms/Cross/plugins/Mpeg3Plugin/libmpeg/mpeg3atrack.c
+--- platforms/Cross/plugins/Mpeg3Plugin/libmpeg/mpeg3atrack.c.orig
++++ platforms/Cross/plugins/Mpeg3Plugin/libmpeg/mpeg3atrack.c
+@@ -35,6 +35,11 @@
+ 
+ #include <stdlib.h>
+ 
++
++/* mpeg3demux.c */
++extern int mpeg3demux_copy_titles(mpeg3_demuxer_t *dst, mpeg3_demuxer_t *src);
++
++
+ mpeg3_atrack_t* mpeg3_new_atrack(mpeg3_t *file, int stream_id, int format, mpeg3_demuxer_t *demuxer)
+ {
+ 	mpeg3_atrack_t *new_atrack;

@@ -1,0 +1,23 @@
+$OpenBSD$
+
+Index: src/plugins/UnixOSProcessPlugin/UnixOSProcessPlugin.c
+--- src/plugins/UnixOSProcessPlugin/UnixOSProcessPlugin.c.orig
++++ src/plugins/UnixOSProcessPlugin/UnixOSProcessPlugin.c
+@@ -4356,7 +4356,7 @@ setSigChldHandler(void)
+ 		sigchldHandlerAction.sa_flags |= SA_ONSTACK;
+ 	}
+ 	sigemptyset(&sigchldHandlerAction.sa_mask);
+-	if ((sigaction(SIGCHLD, &sigchldHandlerAction, 0)) == (sigErrorNumber())) {
++	if ((sigaction(SIGCHLD, &sigchldHandlerAction, 0)) == ((int) sigErrorNumber())) {
+ 		perror("signal");
+ 	}
+ #  else /* defined(SA_NOCLDSTOP) */
+@@ -4399,7 +4399,7 @@ setSignalNumberhandler(sqInt signalNumber, void *signa
+ 	sigHandlerAction.sa_sigaction = signalHandlerAddress;
+ 	sigHandlerAction.sa_flags = SA_ONSTACK | SA_RESTART;
+ 	sigemptyset(&sigHandlerAction.sa_mask);
+-	if ((sigaction(signalNumber, (&sigHandlerAction), (&oldHandlerAction))) == (sigErrorNumber())) {
++	if ((sigaction(signalNumber, (&sigHandlerAction), (&oldHandlerAction))) == ((int) sigErrorNumber())) {
+ 		perror("signal");
+ 	}
+ 	return oldHandlerAction.sa_sigaction;

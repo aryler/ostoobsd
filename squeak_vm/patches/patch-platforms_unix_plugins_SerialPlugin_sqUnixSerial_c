@@ -1,0 +1,46 @@
+$OpenBSD$
+
+Index: platforms/unix/plugins/SerialPlugin/sqUnixSerial.c
+--- platforms/unix/plugins/SerialPlugin/sqUnixSerial.c.orig
++++ platforms/unix/plugins/SerialPlugin/sqUnixSerial.c
+@@ -16,6 +16,13 @@
+ #include <termios.h>
+ #include <errno.h>
+ 
++
++/* This file. */
++int serialPortOpenByName(char *portName, int dataRate, int stopBitsType, int parityType, int dataBits,
++			 int inFlowCtrl, int outFlowCtrl, int xOnChar, int xOffChar);
++int serialPortCloseByName(const char *portName);
++
++
+ /*** Module variables ***/
+ 
+ #define PORT_NAME_SIZE 64
+@@ -140,7 +147,7 @@ int serial_port_cmp(const serial_port_type *sp1, const
+ serial_port_type *find_stored_serialport (const char *serialPortName)
+ {
+   serial_port_type target, *result;
+-  strcpy((&target)->spName, serialPortName);
++  strlcpy((&target)->spName, serialPortName, sizeof((&target)->spName));
+   result= bsearch(&target, &previousSerialFiles, sp_count, sizeof (serial_port_type), (int(*)(const void *, const void *))serial_port_cmp);
+   return result;
+ }
+@@ -150,7 +157,7 @@ serial_port_type *find_stored_serialport (const char *
+ 
+ void make_portname_from_portnum(char *serialPortName, const int portNum)
+ {
+-  strcpy(serialPortName, serialPortBaseNameDefault);
++  strlcpy(serialPortName, serialPortBaseNameDefault, PORT_NAME_SIZE);
+   if (portNum <= 9) serialPortName[strlen(serialPortName) - 1]= '0' + portNum;
+ }
+ 
+@@ -254,7 +261,7 @@ int serialPortOpenByName(char *portName, int dataRate,
+ 	}
+       sp= &previousSerialFiles[sp_count];
+       /* save the serial port name */
+-      strcpy(sp->spName, portName);
++      strlcpy(sp->spName, portName, sizeof(sp->spName));
+       newPort= true;
+     }
+   else if (sp->spDescriptor >= 0)

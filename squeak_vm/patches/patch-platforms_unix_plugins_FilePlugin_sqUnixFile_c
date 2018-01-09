@@ -1,0 +1,46 @@
+$OpenBSD$
+
+Index: platforms/unix/plugins/FilePlugin/sqUnixFile.c
+--- platforms/unix/plugins/FilePlugin/sqUnixFile.c.orig
++++ platforms/unix/plugins/FilePlugin/sqUnixFile.c
+@@ -186,7 +186,7 @@ sqInt dir_Lookup(char *pathString, sqInt pathStringLen
+ #endif
+ 
+   if ((pathStringLength == 0))
+-    strcpy(unixPath, ".");
++    strlcpy(unixPath, ".", sizeof(unixPath));
+   else if (!sq2uxPath(pathString, pathStringLength, unixPath, MAXPATHLEN, 1))
+     return BAD_PATH;
+ 
+@@ -233,8 +233,8 @@ sqInt dir_Lookup(char *pathString, sqInt pathStringLen
+     terminatedName[nameLen]= '\0';
+     if(strlen(unixPath) + 1 + nameLen > MAXPATHLEN)
+       return BAD_PATH;
+-    strcat(unixPath, "/");
+-    strcat(unixPath, terminatedName);
++    strlcat(unixPath, "/", sizeof(unixPath));
++    strlcat(unixPath, terminatedName, sizeof(unixPath));
+     if (stat(unixPath, &statBuf) && lstat(unixPath, &statBuf))
+     {
+ 	/* We can't stat the entry, but failing here would invalidate
+@@ -296,7 +296,7 @@ sqInt dir_EntryLookup(char *pathString, sqInt pathStri
+ #endif
+ 
+   if ((pathStringLength == 0))
+-    strcpy(unixPath, ".");
++    strlcpy(unixPath, ".", sizeof(unixPath));
+   else if (!sq2uxPath(pathString, pathStringLength, unixPath, MAXPATHLEN, 1))
+     return BAD_PATH;
+ 
+@@ -307,8 +307,9 @@ sqInt dir_EntryLookup(char *pathString, sqInt pathStri
+   terminatedName[nameStringLength]= '\0';
+   if(strlen(unixPath) + 1 + nameStringLength > MAXPATHLEN)
+     return BAD_PATH;
+-  strcat(unixPath, "/");
+-  strcat(unixPath, terminatedName);
++  strlcat(unixPath, "/", sizeof(unixPath));
++  strlcat(unixPath, terminatedName, sizeof(unixPath));
++
+   if (stat(unixPath, &statBuf) && lstat(unixPath, &statBuf)) {
+ 	return NO_MORE_ENTRIES;
+   }

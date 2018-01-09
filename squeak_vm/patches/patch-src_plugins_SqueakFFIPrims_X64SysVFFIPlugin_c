@@ -1,0 +1,17 @@
+$OpenBSD$
+
+Index: src/plugins/SqueakFFIPrims/X64SysVFFIPlugin.c
+--- src/plugins/SqueakFFIPrims/X64SysVFFIPlugin.c.orig
++++ src/plugins/SqueakFFIPrims/X64SysVFFIPlugin.c
+@@ -21,6 +21,11 @@ static char __buildInfo[] = "ThreadedX64SysVFFIPlugin 
+ #include "sqVirtualMachine.h"	/*  The virtual machine proxy definition */
+ #include "sqPlatformSpecific.h"	/* Platform specific definitions */
+ 
++
++/* See platforms/Cross/plugins/SqueakFFIPrims/sqFFIPlugin.c. */
++extern void loadFloatRegs(double,double,double,double,double,double,double,double);
++
++
+ #define true 1
+ #define false 0
+ #define null 0  /* using 'null' because nil is predefined in Think C */

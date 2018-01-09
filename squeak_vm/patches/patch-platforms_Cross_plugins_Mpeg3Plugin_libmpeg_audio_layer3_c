@@ -1,0 +1,36 @@
+$OpenBSD$
+
+Index: platforms/Cross/plugins/Mpeg3Plugin/libmpeg/audio/layer3.c
+--- platforms/Cross/plugins/Mpeg3Plugin/libmpeg/audio/layer3.c.orig
++++ platforms/Cross/plugins/Mpeg3Plugin/libmpeg/audio/layer3.c
+@@ -35,6 +35,30 @@
+ #include <stdio.h>
+ #include <string.h>
+ 
++
++/* dct.c */
++extern int mpeg3audio_dct12(float *in,float *rawout1,float *rawout2,register float *wi,register float *ts);
++extern int mpeg3audio_dct36(float *inbuf, float *o1, float *o2, float *wintab, float *tsbuf);
++
++/* header.c */
++extern int mpeg3audio_read_header(mpeg3audio_t *audio);
++
++/* synthesizers.c */
++extern int mpeg3audio_synth_mono(mpeg3audio_t *audio, float *bandPtr, float *samples, int *pnt);
++extern int mpeg3audio_synth_stereo(mpeg3audio_t *audio, float *bandPtr, int channel, float *out, int *pnt);
++
++/* ../bitstream.c */
++extern int  mpeg3bits_getbitoffset(mpeg3_bits_t *stream);
++extern int  mpeg3bits_read_buffer(mpeg3_bits_t* stream, unsigned char *buffer, int bytes);
++extern void mpeg3bits_start_forward(mpeg3_bits_t* stream);
++extern void mpeg3bits_start_reverse(mpeg3_bits_t* stream);
++extern int  mpeg3bits_use_demuxer(mpeg3_bits_t* stream);
++extern int  mpeg3bits_use_ptr(mpeg3_bits_t* stream, unsigned char *buffer);
++
++/* This file. */
++int mpeg3audio_replace_buffer(mpeg3audio_t *audio, long new_allocation);
++
++
+ struct gr_info_s {
+       int scfsi;
+       unsigned part2_3_length;

@@ -1,0 +1,28 @@
+$OpenBSD$
+
+Index: platforms/Cross/plugins/Mpeg3Plugin/libmpeg/mpeg3demux.c
+--- platforms/Cross/plugins/Mpeg3Plugin/libmpeg/mpeg3demux.c.orig
++++ platforms/Cross/plugins/Mpeg3Plugin/libmpeg/mpeg3demux.c
+@@ -40,6 +40,22 @@
+ 
+ #define ABS(x) ((x) >= 0 ? (x) : -(x))
+ 
++
++/* changesForSqueak.c */
++extern int mpeg3_decrypt_packet(mpeg3_css_t *css, unsigned char *sector);
++
++/* mpeg3demux.c */
++extern int mpeg3demux_open_title(mpeg3_demuxer_t *demuxer, int title_number);
++
++/* mpeg3io.c */
++extern int mpeg3io_seek(mpeg3_fs_t *fs, long byte);
++extern int mpeg3io_seek_relative(mpeg3_fs_t *fs, long bytes);
++
++/* mpeg3title.c */
++extern int mpeg3_copy_title(mpeg3_title_t *dst, mpeg3_title_t *src);
++extern int mpeg3_delete_title(mpeg3_title_t *title);
++
++
+ /* Don't advance pointer */
+ static inline unsigned char mpeg3packet_next_char(mpeg3_demuxer_t *demuxer)
+ {

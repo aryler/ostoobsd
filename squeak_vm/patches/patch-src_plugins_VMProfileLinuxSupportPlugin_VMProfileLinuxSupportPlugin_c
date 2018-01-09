@@ -1,0 +1,14 @@
+$OpenBSD$
+
+Index: src/plugins/VMProfileLinuxSupportPlugin/VMProfileLinuxSupportPlugin.c
+--- src/plugins/VMProfileLinuxSupportPlugin/VMProfileLinuxSupportPlugin.c.orig
++++ src/plugins/VMProfileLinuxSupportPlugin/VMProfileLinuxSupportPlugin.c
+@@ -282,7 +282,7 @@ reapmodulesymlinks(struct dl_phdr_info *info, size_t s
+ 	}
+ 	strncpy(arrayValueOf(moduleNameObj), elfModuleName, len);
+ 	storePointerofObjectwithValue(numModules, topRemappableOop(), moduleNameObj);
+-	strcpy(symLinkBuf, elfModuleName);
++	strlcpy(symLinkBuf, elfModuleName, sizeof(symLinkBuf));
+ 	if (((len = readlink(elfModuleName, symLinkBuf, PATH_MAX))) > 0) {
+ 		moduleNameObj = instantiateClassindexableSize(classString(), len);
+ 		if (moduleNameObj == 0) {

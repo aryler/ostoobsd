@@ -1,0 +1,17 @@
+$OpenBSD$
+
+Index: src/plugins/SecurityPlugin/SecurityPlugin.c
+--- src/plugins/SecurityPlugin/SecurityPlugin.c.orig
++++ src/plugins/SecurityPlugin/SecurityPlugin.c
+@@ -21,6 +21,11 @@ static char __buildInfo[] = "SecurityPlugin VMMaker.os
+ #include "sqVirtualMachine.h"	/*  The virtual machine proxy definition */
+ #include "sqPlatformSpecific.h"	/* Platform specific definitions */
+ 
++
++/* platforms/unix/plugins/SecurityPlugin/sqUnixSecurity.c */
++extern sqInt ioHasEnvironmentAccess(void);
++
++
+ #define true 1
+ #define false 0
+ #define null 0  /* using 'null' because nil is predefined in Think C */

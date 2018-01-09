@@ -1,0 +1,20 @@
+$OpenBSD$
+
+Index: platforms/Cross/plugins/Mpeg3Plugin/libmpeg/bitstream.c
+--- platforms/Cross/plugins/Mpeg3Plugin/libmpeg/bitstream.c.orig
++++ platforms/Cross/plugins/Mpeg3Plugin/libmpeg/bitstream.c
+@@ -35,6 +35,14 @@
+ 
+ #include <stdlib.h>
+ 
++
++/* mpeg3demux.c */
++extern int  mpeg3demux_seek_byte(mpeg3_demuxer_t *demuxer, long byte);
++extern int  mpeg3demux_seek_percentage(mpeg3_demuxer_t *demuxer, double percentage);
++extern int  mpeg3demux_seek_time(mpeg3_demuxer_t *demuxer, double new_time);
++extern long mpeg3demuxer_total_bytes(mpeg3_demuxer_t *demuxer);
++
++
+ mpeg3_bits_t* mpeg3bits_new_stream(mpeg3_t *file, mpeg3_demuxer_t *demuxer)
+ {
+ 	mpeg3_bits_t *stream = (mpeg3_bits_t *) memoryAllocate(1,sizeof(mpeg3_bits_t));

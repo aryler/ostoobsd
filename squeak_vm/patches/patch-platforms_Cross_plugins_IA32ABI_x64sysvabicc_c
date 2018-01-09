@@ -1,0 +1,13 @@
+$OpenBSD$
+
+Index: platforms/Cross/plugins/IA32ABI/x64sysvabicc.c
+--- platforms/Cross/plugins/IA32ABI/x64sysvabicc.c.orig
++++ platforms/Cross/plugins/IA32ABI/x64sysvabicc.c
+@@ -34,6 +34,7 @@ void *getbaz() { return baz; }
+ # include <sys/mman.h> /* for mprotect */
+ #else
+ # include <stdlib.h> /* for valloc */
++# include <unistd.h> /* for getpagesize */
+ # include <sys/mman.h> /* for mprotect */
+ #endif
+ 

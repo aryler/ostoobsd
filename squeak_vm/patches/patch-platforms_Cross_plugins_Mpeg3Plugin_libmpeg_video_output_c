@@ -1,0 +1,18 @@
+$OpenBSD$
+
+Index: platforms/Cross/plugins/Mpeg3Plugin/libmpeg/video/output.c
+--- platforms/Cross/plugins/Mpeg3Plugin/libmpeg/video/output.c.orig
++++ platforms/Cross/plugins/Mpeg3Plugin/libmpeg/video/output.c
+@@ -49,6 +49,12 @@ int doClippingArrays=1;
+ 
+ static unsigned char mpeg3_601_to_rgb[256];
+ 
++
++/* This file. */
++int mpeg3video_ditherframeFastRGB555(mpeg3video_t *video, unsigned char **src, unsigned char **output_rows);
++int mpeg3video_ditherframeFastRGBA(mpeg3video_t *video, unsigned char **src, unsigned char **output_rows);
++
++
+ #ifdef HAVE_MMX
+ 
+ #warning Beware of alpha this is not in the mmx code, and it appears tweak really wants it now

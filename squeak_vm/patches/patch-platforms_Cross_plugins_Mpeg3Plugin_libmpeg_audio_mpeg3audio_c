@@ -1,0 +1,50 @@
+$OpenBSD$
+
+Index: platforms/Cross/plugins/Mpeg3Plugin/libmpeg/audio/mpeg3audio.c
+--- platforms/Cross/plugins/Mpeg3Plugin/libmpeg/audio/mpeg3audio.c.orig
++++ platforms/Cross/plugins/Mpeg3Plugin/libmpeg/audio/mpeg3audio.c
+@@ -40,6 +40,44 @@
+ #include <math.h>
+ #include <stdlib.h>
+ 
++
++/* header.c */
++extern int mpeg3audio_prev_header(mpeg3audio_t *audio);
++extern int mpeg3audio_read_header(mpeg3audio_t *audio);
++
++/* layer2.c */
++extern int mpeg3audio_dolayer2(mpeg3audio_t *audio);
++
++/* layer3.c */
++extern int mpeg3audio_dolayer3(mpeg3audio_t *audio);
++extern int mpeg3audio_read_layer3_frame(mpeg3audio_t *audio);
++
++/* pcm.c */
++extern int mpeg3audio_do_pcm(mpeg3audio_t *audio);
++
++/* synthesizers.c */
++extern int mpeg3audio_reset_synths(mpeg3audio_t *audio);
++
++/* tables.c */
++extern int mpeg3audio_new_decode_tables(mpeg3audio_t *audio);
++
++/* ../bitsream.c */
++extern int mpeg3bits_byte_align(mpeg3_bits_t *stream);
++extern int mpeg3bits_delete_stream(mpeg3_bits_t* stream);
++extern int mpeg3bits_read_buffer(mpeg3_bits_t* stream, unsigned char *buffer, int bytes);
++extern int mpeg3bits_seek_byte(mpeg3_bits_t* stream, long position);
++extern int mpeg3bits_seek_percentage(mpeg3_bits_t* stream, double percentage);
++extern int mpeg3bits_seek_start(mpeg3_bits_t* stream);
++extern int mpeg3bits_seek_time(mpeg3_bits_t* stream, double time_position);
++
++/* ../mpeg3demux.c */
++extern int  mpeg3demux_eof(mpeg3_demuxer_t *demuxer);
++extern long mpeg3demuxer_total_bytes(mpeg3_demuxer_t *demuxer);
++
++/* This file. */
++int mpeg3audio_replace_buffer(mpeg3audio_t *audio, long new_allocation);
++
++
+ mpeg3audio_t* mpeg3audio_allocate_struct(mpeg3_t *file, mpeg3_atrack_t *track)
+ {
+ 	mpeg3audio_t *audio = (mpeg3audio_t *) memoryAllocate(1, sizeof(mpeg3audio_t));

@@ -1,0 +1,36 @@
+$OpenBSD$
+
+Index: platforms/Cross/plugins/Mpeg3Plugin/libmpeg/mpeg3io.c
+--- platforms/Cross/plugins/Mpeg3Plugin/libmpeg/mpeg3io.c.orig
++++ platforms/Cross/plugins/Mpeg3Plugin/libmpeg/mpeg3io.c
+@@ -56,6 +56,12 @@
+ #include <stdlib.h>
+ #include <string.h>
+ 
++
++/* changesForSqueak.c */
++extern int mpeg3_delete_css(mpeg3_css_t *css);
++extern int mpeg3_get_keys(mpeg3_css_t *css, char *path);
++
++
+ mpeg3_fs_t* mpeg3_new_fs(char *path,int size)
+ {
+ 	mpeg3_fs_t *fs = (mpeg3_fs_t *) memoryAllocate(1, sizeof(mpeg3_fs_t));
+@@ -67,7 +73,7 @@ mpeg3_fs_t* mpeg3_new_fs(char *path,int size)
+ 		memmove(fs->mpeg_is_in_buffer,path,size);
+ 		fs->path[0] = 0x00;
+ 	} else {
+-	strcpy(fs->path, path);
++	strlcpy(fs->path, path, sizeof(fs->path));
+ 		fs->mpeg_is_in_buffer = NULL;
+ 		fs->mpeg_is_in_buffer_file_position = 0;
+ 		fs->mpeg_buffer_size = 0;
+@@ -87,7 +93,7 @@ int mpeg3_delete_fs(mpeg3_fs_t *fs)
+ 
+ int mpeg3_copy_fs(mpeg3_fs_t *dst, mpeg3_fs_t *src)
+ {
+-	strcpy(dst->path, src->path);
++	strlcpy(dst->path, src->path, sizeof(dst->path));
+ 	dst->current_byte = 0;
+ 	return 0;
+ }

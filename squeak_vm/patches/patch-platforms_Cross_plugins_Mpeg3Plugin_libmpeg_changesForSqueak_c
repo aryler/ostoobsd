@@ -1,0 +1,37 @@
+$OpenBSD$
+
+Index: platforms/Cross/plugins/Mpeg3Plugin/libmpeg/changesForSqueak.c
+--- platforms/Cross/plugins/Mpeg3Plugin/libmpeg/changesForSqueak.c.orig
++++ platforms/Cross/plugins/Mpeg3Plugin/libmpeg/changesForSqueak.c
+@@ -48,6 +48,22 @@
+ #include <windows.h>
+ #endif
+ 
++
++/* mpeg3demux.c */
++extern int mpeg3_delete_demuxer(mpeg3_demuxer_t *demuxer);
++extern int mpeg3_read_next_packet(mpeg3_demuxer_t *demuxer);
++extern int mpeg3_read_prev_packet(mpeg3_demuxer_t *demuxer);
++extern int mpeg3demux_open_title(mpeg3_demuxer_t *demuxer, int title_number);
++extern int mpeg3demux_print_timecodes(mpeg3_title_t *title, FILE *output);
++
++/* mpeg3io.c */
++extern int mpeg3io_seek(mpeg3_fs_t *fs, long byte);
++
++/* This file. */
++int mpeg3demux_create_title_for_Squeak(mpeg3_demuxer_t *demuxer, int timecode_search, char *buffer,int buffer_size);
++int mpeg3demux_print_streams_for_Squeak(mpeg3_demuxer_t *demuxer, char *buffer,int buffer_size);
++
++
+ mpeg3_demuxer_t* mpeg3_new_demuxer(mpeg3_t *file, int do_audio, int do_video, int stream_id);
+ mpeg3_title_t* mpeg3_new_title(mpeg3_t *file, char *path);
+ mpeg3demux_timecode_t* mpeg3_append_timecode(mpeg3_demuxer_t *demuxer, 
+@@ -155,7 +171,7 @@ int isSystem9_0_or_better(void)
+ void appendStringToBufferIfPossible(char *buffer,char *append,int bufferSize) 
+ {
+ 	if (strlen(append) + strlen(buffer) < bufferSize) 
+-		strcat(buffer,append);
++		strlcat(buffer,append,bufferSize);
+ 
+ }
+ 
