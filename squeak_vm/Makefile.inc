@@ -23,7 +23,7 @@ GH_PROJECT =		opensmalltalk-vm
 GH_COMMIT =		9d39149b257141914497d9c7454e3a2ce6193ec8
 
 DIST_SUBDIR =		${OST_HOME}
-BUILD_DEPENDS =		net/curl	# For st src building/fetching
+BUILD_DEPENDS =		archivers/unzip net/curl net/wget	# For st src building/fetching
 LIB_DEPENDS =		devel/libexecinfo converters/libiconv
 SEPARATE_BUILD =	Yes
 USE_GMAKE =		Yes

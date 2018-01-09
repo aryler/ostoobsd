@@ -3,9 +3,12 @@ $OpenBSD$
 Index: image/ensureSqueakV50sources.sh
 --- image/ensureSqueakV50sources.sh.orig
 +++ image/ensureSqueakV50sources.sh
-@@ -1,4 +1,4 @@
+@@ -1,6 +1,6 @@
 -#!/bin/bash -e
 +#!/bin/sh -e
  . ./envvars.sh
- test -f SqueakV50.sources && exit 0
+-test -f SqueakV50.sources && exit 0
++[ -f SqueakV50.sources ] && exit 0
  if [ -f ../sources/SqueakV50.sources ]; then
+ 	ln ../sources/SqueakV50.sources .
+ 	exit 0

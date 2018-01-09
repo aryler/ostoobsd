@@ -3,9 +3,25 @@ $OpenBSD$
 Index: image/getGoodSpur64VM.sh
 --- image/getGoodSpur64VM.sh.orig
 +++ image/getGoodSpur64VM.sh
-@@ -1,4 +1,4 @@
+@@ -1,10 +1,10 @@
 -#!/bin/bash -e
 +#!/bin/sh -e
  
  set +v
  
+ . ./envvars.sh
+ 
+-if [ "$1" = -vm -a -n "$2" -a -x "`which "$2"`" ]; then
++if [ "$1" = -vm ] && [ -n "$2" ] && [ -x "`which "$2"`" ]; then
+ 	VM="$2"
+ else
+ 	echo checking for latest 64-bit VM on bintray...
+@@ -23,7 +23,7 @@ else
+ 			rm -f "$LATESTVM"
+ 		fi
+ 		VM=$VM/Contents/MacOS/Squeak;;
+-	Linux) # This needs to be split by $CPU to work on RPi also
++	Linux|*BSD) # This needs to be split by $CPU to work on RPi also
+ 		LATESTVM="`curl -s -L "https://dl.bintray.com/opensmalltalk/vm/" | grep -v itimer | grep cog_linux64x64_squeak.cog.spur_ | tail -n 1 | sed 's/^.*">\(.*\)<.a><.pre>/\1/'`"
+ 		#echo $LATESTVM
+ 		TAG="`echo $LATESTVM | sed 's/.*_\(.*\).tar.gz/\1-64/'`"

@@ -3,9 +3,15 @@ $OpenBSD$
 Index: image/buildspurtrunkreader64image.sh
 --- image/buildspurtrunkreader64image.sh.orig
 +++ image/buildspurtrunkreader64image.sh
-@@ -1,4 +1,4 @@
+@@ -1,8 +1,8 @@
 -#!/bin/bash -e
 +#!/bin/sh -e
  . ./envvars.sh
  
- test -f spurreader.image || ./buildspurtrunkreaderimage.sh
+-test -f spurreader.image || ./buildspurtrunkreaderimage.sh
+-test -f SpurVMMaker.image && ./updatevmmakerimage.sh || buildspurtrunkvmmakerimage.sh
++[ -f spurreader.image ] || ./buildspurtrunkreaderimage.sh
++[ -f SpurVMMaker.image ] && ./updatevmmakerimage.sh || buildspurtrunkvmmakerimage.sh
+ 
+ . ./getGoodSpurVM.sh
+ 

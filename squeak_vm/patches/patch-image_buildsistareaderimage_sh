@@ -9,3 +9,12 @@ Index: image/buildsistareaderimage.sh
  # Build a Spur image that starts up in a simple REPL, which is
  # really useful for VMMaker simulation testing.
  . ./envvars.sh
+@@ -10,7 +10,7 @@
+ cp -p trunk50.image sistareader.image
+ cp -p trunk50.changes sistareader.changes
+ 
+-if test -n "$1"; then
++if [ -n "$1"]; then
+ 	VM="$1"
+ else
+ . ./getGoodSpurVM.sh

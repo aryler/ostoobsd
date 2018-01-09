@@ -3,9 +3,13 @@ $OpenBSD$
 Index: image/buildspurtrunk64image.sh
 --- image/buildspurtrunk64image.sh.orig
 +++ image/buildspurtrunk64image.sh
-@@ -1,4 +1,4 @@
+@@ -1,7 +1,7 @@
 -#!/bin/bash -e
 +#!/bin/sh -e
  . ./envvars.sh
  
- test -f SpurVMMaker.image || ./buildspurtrunkvmmakerimage.sh
+-test -f SpurVMMaker.image || ./buildspurtrunkvmmakerimage.sh
++[ -f SpurVMMaker.image ] || ./buildspurtrunkvmmakerimage.sh
+ 
+ . ./getGoodSpurVM.sh
+ 
