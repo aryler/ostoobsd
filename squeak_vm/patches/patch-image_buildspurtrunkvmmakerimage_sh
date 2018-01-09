@@ -1,0 +1,11 @@
+$OpenBSD$
+
+Index: image/buildspurtrunkvmmakerimage.sh
+--- image/buildspurtrunkvmmakerimage.sh.orig
++++ image/buildspurtrunkvmmakerimage.sh
+@@ -1,4 +1,4 @@
+-#!/bin/bash -e
++#!/bin/sh -e
+ . ./envvars.sh
+ 
+ ./updatespurimage.sh "$@"

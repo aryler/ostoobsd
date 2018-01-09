@@ -1,0 +1,11 @@
+$OpenBSD$
+
+Index: image/buildspurtrunkreaderimage.sh
+--- image/buildspurtrunkreaderimage.sh.orig
++++ image/buildspurtrunkreaderimage.sh
+@@ -1,4 +1,4 @@
+-#!/bin/bash -e
++#!/bin/sh -e
+ # Build a Spur image that starts up in a simple REPL, which is
+ # really useful for VMMaker simulation testing.
+ . ./envvars.sh

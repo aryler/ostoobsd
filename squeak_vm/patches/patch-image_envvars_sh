@@ -1,0 +1,11 @@
+$OpenBSD$
+
+Index: image/envvars.sh
+--- image/envvars.sh.orig
++++ image/envvars.sh
+@@ -1,4 +1,4 @@
+-#!/bin/bash -e
++#!/bin/sh -e
+ 
+ BASE=trunk6
+ BASE64=trunk6-64

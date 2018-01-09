@@ -20,7 +20,7 @@ WANTLIB +=		ssl util
 
 GH_ACCOUNT =		opensmalltalk
 GH_PROJECT =		opensmalltalk-vm
-GH_COMMIT =		0c7c4d395f5c78e015f1528bc70391fb4da8a7eb
+GH_COMMIT =		9d39149b257141914497d9c7454e3a2ce6193ec8
 
 DIST_SUBDIR =		${OST_HOME}
 BUILD_DEPENDS =		net/curl	# For st src building/fetching

@@ -13,7 +13,7 @@ DISTNAME =	${D}
 OST_DISTNAME =	${D}${B}
 OST_PKGNAME =	${N}-${V}
 
-HOMEPAGE =	http://pharo.org/
+HOMEPAGE =	http://scratch.mit.edu/
 
 OST_SITE_DIR =	scratch
 OST_EXCLUDE =	'__MACOSX*' '*.DS_Store'

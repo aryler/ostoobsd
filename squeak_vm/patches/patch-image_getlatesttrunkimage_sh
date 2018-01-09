@@ -1,0 +1,11 @@
+$OpenBSD$
+
+Index: image/getlatesttrunkimage.sh
+--- image/getlatesttrunkimage.sh.orig
++++ image/getlatesttrunkimage.sh
+@@ -1,4 +1,4 @@
+-#!/bin/bash
++#!/bin/sh
+ . ./envvars.sh
+ # curl clags -s silent -o output to
+ URL=http://files.squeak.org/6.0alpha/

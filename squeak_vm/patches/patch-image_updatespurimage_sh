@@ -1,0 +1,11 @@
+$OpenBSD$
+
+Index: image/updatespurimage.sh
+--- image/updatespurimage.sh.orig
++++ image/updatespurimage.sh
+@@ -1,4 +1,4 @@
+-#!/bin/bash -e
++#!/bin/sh -e
+ # Update the latest Spur image, or fetch the latest available and update that.
+ . ./envvars.sh
+ 

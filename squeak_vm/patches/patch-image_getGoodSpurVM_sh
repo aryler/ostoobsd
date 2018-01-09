@@ -1,0 +1,11 @@
+$OpenBSD$
+
+Index: image/getGoodSpurVM.sh
+--- image/getGoodSpurVM.sh.orig
++++ image/getGoodSpurVM.sh
+@@ -1,4 +1,4 @@
+-#!/bin/bash -e
++#!/bin/sh -e
+ 
+ set +v
+ 
