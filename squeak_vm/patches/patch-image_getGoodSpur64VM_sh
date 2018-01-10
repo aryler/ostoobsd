@@ -25,3 +25,12 @@ Index: image/getGoodSpur64VM.sh
  		LATESTVM="`curl -s -L "https://dl.bintray.com/opensmalltalk/vm/" | grep -v itimer | grep cog_linux64x64_squeak.cog.spur_ | tail -n 1 | sed 's/^.*">\(.*\)<.a><.pre>/\1/'`"
  		#echo $LATESTVM
  		TAG="`echo $LATESTVM | sed 's/.*_\(.*\).tar.gz/\1-64/'`"
+@@ -33,7 +33,7 @@ else
+ 			echo Downloading $LATESTVM from bintray
+ 			curl -L "https://dl.bintray.com/opensmalltalk/vm/$LATESTVM" -o "$LATESTVM"
+ 			tar xzf "$LATESTVM"
+-			mv sqcogspurlinuxht $VM
++			mv sqcogspur64linuxht $VM
+ 			rm -f "$LATESTVM"
+ 		fi
+ 		VM=$VM/squeak;;
