@@ -3,54 +3,56 @@ $OpenBSD$
 Index: image/envvars.sh
 --- image/envvars.sh.orig
 +++ image/envvars.sh
-@@ -1,14 +1,14 @@
+@@ -1,37 +1,32 @@
 -#!/bin/bash -e
 +#!/bin/sh -e
  
  BASE=trunk6
  BASE64=trunk6-64
  
- # N.B. uname -r (OSREL) is not to be trusted on Mac OS X;
- 
+-# N.B. uname -r (OSREL) is not to be trusted on Mac OS X;
+-
 -if test -x /usr/bin/uname; then
-+if [ -x /usr/bin/uname ]; then
++if test -x /usr/bin/uname ; then
  	OS=`/usr/bin/uname -s`
- 	OSREL=`/usr/bin/uname -r | sed 's/\([0-9]*\)\.\([0-9]*\)\.\([0-9]*\).*$/\1.\2.\3/'`
+-	OSREL=`/usr/bin/uname -r | sed 's/\([0-9]*\)\.\([0-9]*\)\.\([0-9]*\).*$/\1.\2.\3/'`
 -elif test -x /bin/uname; then
-+elif [ -x /bin/uname ]; then
++elif test -x /bin/uname ; then
  	OS=`/bin/uname -s`
  	CPU=`/bin/uname -m`
- 	OSREL=`/bin/uname -r | sed 's/\([0-9]*\)\.\([0-9]*\)\.\([0-9]*\).*$/\1.\2.\3/'`
-@@ -18,20 +18,23 @@ else
- 	OSREL=`uname -r | sed 's/\([0-9]*\)\.\([0-9]*\)\.\([0-9]*\).*$/\1.\2.\3/'`
+-	OSREL=`/bin/uname -r | sed 's/\([0-9]*\)\.\([0-9]*\)\.\([0-9]*\).*$/\1.\2.\3/'`
+ else
+ 	OS=`uname -s`
+ 	CPU=`uname -m`
+-	OSREL=`uname -r | sed 's/\([0-9]*\)\.\([0-9]*\)\.\([0-9]*\).*$/\1.\2.\3/'`
  fi
  
 -test "$OS" = Darwin && function quietmd5 { /sbin/md5 -q "$1" 2>/dev/null; }
 -test "$OS" = Darwin || function quietmd5 { /usr/bin/md5sum "$1" | sed 's/ .*$//' 2>/dev/null; }
-+if [ "$OS" = Darwin ]; then
++if test "$OS" = Darwin ; then
 +	function quietmd5 { /sbin/md5 -q "$1" 2>/dev/null; }
 +	function geturl { FILE=`basename "$1"`; curl -C - "`echo $1 | sed 's/ /%20/g'`" -o "$FILE"; }
 +else
 +	quietmd5() { /bin/md5 -q "$1" 2>/dev/null; }
 +	geturl() { wget -c "$1"; }
++fi
  
 -test "$OS" = Darwin && function geturl { FILE=`basename "$1"`; curl -C - "`echo $1 | sed 's/ /%20/g'`" -o "$FILE"; }
 -test "$OS" = Darwin || function geturl { wget -c "$1"; }
-+fi
- 
+-
 -if [ "$OS" != Darwin -a ! -x "`which wget`" ]; then
 -	echo "cannot find wget. wget for Windows is available from http://gnuwin32.sourceforge.net/packages/wget.htm, probably as http://downloads.sourceforge.net/gnuwin32/wget-1.11.4-1-setup.exe" 1>&2
 -	exit
-+if [ "$OS" != Darwin ] && [ ! -x "`which wget 2>/dev/null`" ]; then
++if test "$OS" != Darwin  && test ! -x "`which wget 2>/dev/null`" ; then
 +	echo "Can't find wget. wget for Windows is available from http://gnuwin32.sourceforge.net/packages/wget.htm, probably as http://downloads.sourceforge.net/gnuwin32/wget-1.11.4-1-setup.exe" 1>&2
 +	exit 1
  fi
  
 -if unzip --help >/dev/null; then
-+if unzip --help >/dev/null 2>&1; then
- 	true
- else
+-	true
+-else
 -	echo 'could not find unzip.  you can find instructions on how to install it on google.' 1>&2;
++if ! unzip --help >/dev/null 2>&1; then
 +	echo "Can't find unzip. You can find instructions on how to install it on Google." 1>&2;
  	exit 1
  fi

@@ -13,12 +13,21 @@ Index: image/updatespur64image.sh
  
 -if test \! -f SqueakV50.sources ; then
 -	if test -f ../sources/SqueakV50.sources; then
-+if [ ! -f SqueakV50.sources ]; then
-+	if [ -f ../sources/SqueakV50.sources ]; then
++if test ! -f SqueakV50.sources ; then
++	if test -f ../sources/SqueakV50.sources ; then
  		ln ../sources/SqueakV50.sources .
  	else
 -		if test \! -f SqueakV50.sources.gz; then
-+		if [ ! -f SqueakV50.sources.gz ]; then
++		if test ! -f SqueakV50.sources.gz ; then
  			echo downloading source file...
  			geturl http://files.squeak.org/sources_files/SqueakV50.sources.gz
  		fi
+@@ -16,7 +16,7 @@ if test \! -f SqueakV50.sources ; then
+ 	fi
+ fi
+ 
+-if [ ! -f $BASE64.image ]; then
++if test ! -f $BASE64.image ; then
+ 	. ./getlatesttrunk64image.sh
+ 	echo $VM $BASE64.image NukePreferenceWizardMorph.st
+ 	$VM $BASE64.image NukePreferenceWizardMorph.st

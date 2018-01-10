@@ -3,9 +3,11 @@ $OpenBSD$
 Index: image/resizesqueakwindow.sh
 --- image/resizesqueakwindow.sh.orig
 +++ image/resizesqueakwindow.sh
-@@ -1,4 +1,4 @@
+@@ -1,5 +1,5 @@
 -#!/bin/bash -e
+-if [ $# -ne 3 ]; then
 +#!/bin/sh -e
- if [ $# -ne 3 ]; then
++if test $# -ne 3 ; then
  	echo "Usage: `basename $0` <image> <width> <height>"
  	exit 1
+ fi

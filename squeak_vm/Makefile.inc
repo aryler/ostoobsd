@@ -6,7 +6,7 @@ N = 			${SQ_IN}_${SQ_VM}_${SQ_OR:S/3/three/:S/./_/}
 
 V =			5.1
 
-DISTNAME =		opensmalltalk-${V}pl0
+DISTNAME =		opensmalltalk-${V}
 PKGNAME =		ostV_${N}-${V}
 CATEGORIES =		lang
 HOMEPAGE =		http://opensmalltalk.org/
@@ -15,7 +15,7 @@ MAINTAINER =		Stuart Cassoff <stwo@users.sourceforge.net>
 # ?
 PERMIT_PACKAGE_CDROM =	Yes
 
-WANTLIB =		GL ICE SM X11 Xext c crypto execinfo m pthread
+WANTLIB =		GL ICE SM X11 Xext c crypto execinfo iconv m pthread
 WANTLIB +=		ssl util
 
 GH_ACCOUNT =		opensmalltalk
@@ -23,7 +23,6 @@ GH_PROJECT =		opensmalltalk-vm
 GH_COMMIT =		9d39149b257141914497d9c7454e3a2ce6193ec8
 
 DIST_SUBDIR =		${OST_HOME}
-BUILD_DEPENDS =		archivers/unzip net/curl net/wget	# For st src building/fetching
 LIB_DEPENDS =		devel/libexecinfo converters/libiconv
 SEPARATE_BUILD =	Yes
 USE_GMAKE =		Yes

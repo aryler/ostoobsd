@@ -1,6 +1,6 @@
 OpenSmalltalk on OpenBSD
 
-Status as of: 2018/01/09
+Status as of: 2018/01/10
 
 I've collected about as much useful Smalltalk bits and pieces as I could find.
 
@@ -23,9 +23,9 @@ $ /usr/ports/pobj/squeak_cog_spur-5.1/build-i386/squeak \
 
 Yields:
 
-Squeak VM:10  Squeak Image:9   Squeak Sources:7   
+Squeak VM:10  Squeak Image:11  Squeak Sources:7   
  Other VM:4    Other Image:15   Other Sources:2   
- Total VM:14   Total Image:24   Total Sources:9 
+ Total VM:14   Total Image:26   Total Sources:9 
 
 Squeak VM:
 newspeak_cog_spur-5.1		squeak_cog_spur-5.1
@@ -38,9 +38,10 @@ Other VM:
 exupery-0.15	squeak-1.3	squeak-2.4	squeak-3.10.1
 
 Squeak Image:
-squeak-1.31		squeak-4.5		squeak_32-6.0alpha
-squeak-2.8		squeak-4.6		squeak_64-5.1
-squeak-3.10.2		squeak_32-5.1		squeak_64-6.0alpha
+squeak-1.31		squeak-4.6		squeak_64-6.0alpha
+squeak-2.8		squeak_32-5.1		vmmaker_32-6.0alpha
+squeak-3.10.2		squeak_32-6.0alpha	vmmaker_64-6.0alpha
+squeak-4.5		squeak_64-5.1
 
 Other Image:
 etoys_32-6.0beta	nuscratch-20170821	pharo_64-6.0

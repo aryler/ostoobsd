@@ -3,9 +3,14 @@ $OpenBSD$
 Index: image/updatevmmakerimage.sh
 --- image/updatevmmakerimage.sh.orig
 +++ image/updatevmmakerimage.sh
-@@ -1,4 +1,4 @@
+@@ -1,8 +1,8 @@
 -#!/bin/bash -e
 +#!/bin/sh -e
  # Update the latest Spur image.
  . ./envvars.sh
  
+-if [ ! -f SpurVMMaker.image ]; then
++if test ! -f SpurVMMaker.image ; then
+ 	echo no SpurVMMaker.image to update\; $0 bailing out
+ 	exit 0
+ fi

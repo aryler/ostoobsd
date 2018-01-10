@@ -10,5 +10,7 @@
      SUBDIR += ostI_squeak51_64
      SUBDIR += ostI_squeak60_32
      SUBDIR += ostI_squeak60_64
+     SUBDIR += ostI_vmmaker_32
+     SUBDIR += ostI_vmmaker_64
 
 .include <bsd.port.subdir.mk>

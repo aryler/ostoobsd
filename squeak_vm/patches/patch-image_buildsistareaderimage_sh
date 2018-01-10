@@ -14,7 +14,7 @@ Index: image/buildsistareaderimage.sh
  cp -p trunk50.changes sistareader.changes
  
 -if test -n "$1"; then
-+if [ -n "$1"]; then
++if test -n "$1" ; then
  	VM="$1"
  else
  . ./getGoodSpurVM.sh

@@ -17,7 +17,7 @@ MASTER_SITES =		${SQ_SITE:=${SQ_SITE_DIR}/}
 EXTRACT_ONLY =
 EXTRACT_SUFX =		.zip
 DIST_SUBDIR =		${OST_HOME}
-NO_BUILD =		Yes
+NO_BUILD ?=		Yes
 SUBST_VARS =		OST_HOME OST_IMG_VER
 
 SQ_SITE =		http://files.squeak.org/
