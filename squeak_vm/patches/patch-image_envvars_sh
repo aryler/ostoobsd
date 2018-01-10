@@ -31,7 +31,7 @@ Index: image/envvars.sh
 +	function quietmd5 { /sbin/md5 -q "$1" 2>/dev/null; }
 +	function geturl { FILE=`basename "$1"`; curl -C - "`echo $1 | sed 's/ /%20/g'`" -o "$FILE"; }
 +else
-+	quietmd5() { /bin/md5 "$1" | sed 's/ .*$//' 2>/dev/null; }
++	quietmd5() { /bin/md5 -q "$1" 2>/dev/null; }
 +	geturl() { wget -c "$1"; }
  
 -test "$OS" = Darwin && function geturl { FILE=`basename "$1"`; curl -C - "`echo $1 | sed 's/ /%20/g'`" -o "$FILE"; }
